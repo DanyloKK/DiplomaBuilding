@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background: #f2f2f2;
+  background: #ffffff;
 }
 %TextStyle{
   text-decoration: none;
@@ -247,6 +247,11 @@ body{
   .ui-tabs.ui-widget-content {
     padding: 0;
     border: 0;
+    .ui-tabs-panel{
+      display: flex;
+      padding-right: 60px;
+      padding-top:0;
+    }
 
     .ui-tabs-nav {
       display: flex;
@@ -254,6 +259,7 @@ body{
       gap: 30px;
       background: #ffb342;
       padding: 0 0 40px 0;
+      overflow: hidden;
 
     }
 
@@ -284,24 +290,62 @@ body{
       }
       }
     }
-    .ui-state-active:hover{
+    .ui-state-active{
       border: 1px solid #fff;
       background: #fff;
     }
   }
-.ui-tabs{
-  .ui-tabs-panel{
-  padding: 0;
-  display: flex;
-}
-}
 
-  .SectionTwo-MainContainer-Menu2-Inner{
+
+  .SectionThree-MainContainer-Menu2-List-Inner{
     max-width: 1160px;
-    display: none;
-
+    position: relative;
+    top:90px;
     .SectionThree-MainContainer-Menu2-Inner-List{
       max-width: 624px;
+      padding: 0;
+      margin: 50px 70px 60px 50px;
+      .SectionThree-MainContainer-Menu2-Inner-List-Image{
+        width: 100%;
+        height: 366px;
+      }
+      .SectionThree-MainContainer-Menu2-Inner-List-item1{
+        @include Styles(400, 17px, 159%, 0.02em, #1c2752);
+        text-transform: capitalize;
+        display: inline-block;
+        background: #f4f4f4;
+        padding: 0 28px 0 20px;
+        margin-bottom: 22px;
+
+        &::before{
+          content: "";
+          width: 28px;
+          height: 28px;
+          background-image: url("../Images/ElectricalInstalation.svg");
+          display: inline-block;
+          position: relative;
+          margin: 0 10px 0 0;
+          top:5px;
+        }
+      }
+      h2{
+        @include Styles(400, 45px, 130%, 0.01em, #1c2752);
+        margin-bottom: 12px;
+      }
+      p:nth-of-type(2){
+        @include Styles(400, 18px, 150%, 0.02em,#7e7e7e);
+        margin-bottom: 10px;
+      }
+      p:nth-of-type(3){
+        @include Styles(400, 18px, 150%, 0.02em,#7e7e7e);
+        margin-bottom: 30px;
+      }
+      a{
+        @include Styles(400, 20px, 150%, 0.02em,#1c2752);
+        padding: 19px 42px;
+        background: #ffb342;
+        text-decoration: none;
+      }
     }
   }
 

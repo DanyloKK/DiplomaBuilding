@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: #ffffff;
 }
 
 .SecondDiv-menu3 .SecondDiv-menu3-list-item-link2, .SecondDiv-menu3 .SecondDiv-menu3-list-item-link {
@@ -301,12 +301,18 @@ body {
   padding: 0;
   border: 0;
 }
+.ui-tabs.ui-widget-content .ui-tabs-panel {
+  display: flex;
+  padding-right: 60px;
+  padding-top: 0;
+}
 .ui-tabs.ui-widget-content .ui-tabs-nav {
   display: flex;
   justify-content: center;
   gap: 30px;
   background: #ffb342;
   padding: 0 0 40px 0;
+  overflow: hidden;
 }
 .ui-tabs.ui-widget-content .ui-widget-header {
   border: 0;
@@ -337,22 +343,80 @@ body {
   display: inline-block;
   margin: -5px 10px 0 0;
 }
-.ui-tabs.ui-widget-content .ui-state-active:hover {
+.ui-tabs.ui-widget-content .ui-state-active {
   border: 1px solid #fff;
   background: #fff;
 }
 
-.ui-tabs .ui-tabs-panel {
-  padding: 0;
-  display: flex;
-}
-
-.SectionTwo-MainContainer-Menu2-Inner {
+.SectionThree-MainContainer-Menu2-List-Inner {
   max-width: 1160px;
-  display: none;
+  position: relative;
+  top: 90px;
 }
-.SectionTwo-MainContainer-Menu2-Inner .SectionThree-MainContainer-Menu2-Inner-List {
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List {
   max-width: 624px;
+  padding: 0;
+  margin: 50px 70px 60px 50px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List .SectionThree-MainContainer-Menu2-Inner-List-Image {
+  width: 100%;
+  height: 366px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List .SectionThree-MainContainer-Menu2-Inner-List-item1 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  text-transform: capitalize;
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 0 28px 0 20px;
+  margin-bottom: 22px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List .SectionThree-MainContainer-Menu2-Inner-List-item1::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-image: url("../Images/ElectricalInstalation.svg");
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  top: 5px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List h2 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  margin-bottom: 12px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  margin-bottom: 10px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List p:nth-of-type(3) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  margin-bottom: 30px;
+}
+.SectionThree-MainContainer-Menu2-List-Inner .SectionThree-MainContainer-Menu2-Inner-List a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  padding: 19px 42px;
+  background: #ffb342;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=Styles.css.map */
