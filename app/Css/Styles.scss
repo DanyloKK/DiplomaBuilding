@@ -1,0 +1,606 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #ffffff;
+}
+%TextStyle{
+  text-decoration: none;
+}
+@mixin Styles ($F-w,$F-s,$L-h,$L-s,$Col){
+  font-weight: $F-w;
+  font-size: $F-s;
+  line-height: $L-h;
+  letter-spacing: $L-s;
+  color: $Col;
+};
+@mixin AlignmentOfBlock($Marg,$M-w,$Disp,$J-c){
+  margin:$Marg;
+  max-width:$M-w;
+  display:$Disp;
+  justify-content:$J-c ;
+};
+.FirstDiv{
+    @include AlignmentOfBlock(auto,1440px,flex,space-between);
+  padding: 21px 0 20px 0;
+}
+.FirstDiv{
+  p{
+    @include Styles(400,17px,159%,0.02em,#1c2752);
+    margin:0 0 0 120px;
+  }
+  .FirstDiv_menu-list{
+    margin: 0 120px 0 0;
+    display: flex;
+    gap:20px;
+  }
+  .FirstDiv_menu-item{
+    list-style: none;
+  }
+}
+.SecondDiv {
+  flex-wrap: wrap;
+  @include AlignmentOfBlock(auto, 1440px, flex, space-between);
+  background: white;
+
+
+  .SecondDiv-link {
+    max-width: 100%;
+    padding:50px 0 0 0;
+    margin:0 0 0 120px;
+  }
+  .SecondDiv-MainMenu{
+    max-width: 638px;
+    display: flex;
+    gap:65px;
+    margin: 40px 120px 0 0;
+
+  }
+.SecondDiv-menu{
+  display: flex;
+  gap:15px;
+}
+  .SecondDiv-menu1{
+    a {
+      img{
+        width: 68px;
+        height: 68px;
+      }
+    }
+  }
+  .SecondDiv-menu2{
+    margin: 8px 0 0 0;
+    p{
+      @include Styles(400,20px,130%,0.02em,#1c2752)
+    }
+    .SecondDiv-menu-link{
+      @include Styles(400,17px,159%,0.02em,#1c2752);
+      text-decoration: none;
+    }
+  }
+}
+.SecondDiv-menu3{
+  position: relative;
+  top:50px;
+  background: #ffb342;
+  @include AlignmentOfBlock(auto,1200px,flex,space-between);
+  width: 100%;
+  align-items: center;
+  .SecondDiv-menu3-list{
+    @include AlignmentOfBlock(0,645px,flex,space-between);
+    gap:49px;
+    padding: 29px 0 29px 45px;
+  }
+  .SecondDiv-menu3-list-item{
+    list-style:none;
+
+  }
+  .SecondDiv-menu3-list-item-link{
+    @include Styles(400,19px,158%,0.02em,#222);
+    @extend %TextStyle;
+    &:hover{
+    color: #f2f2f2;
+  }
+  }
+  .SecondDiv-menu3-list-item-link2{
+    @include Styles(400,20px,150%,0.02em,#f4f4f4);
+    text-align: center;
+    @extend %TextStyle;
+    padding: 19px 42px;
+    margin: 10px 10px;
+    background: #1c2752;
+}
+}
+
+.SectionOne-MainContainer{
+  @include AlignmentOfBlock(auto,1440px,flex,stretch);
+  background: url("../Images/BackGroundImage1.png") ;
+  .SectionOne-MainContainer-Menu4{
+    margin: 260px 0 220px 120px;
+    max-width: 720px;
+
+  }
+  .SectionOne-MainContainer-Menu4-item1{
+    display: flex;
+    @include Styles(400,18px,150%,0.02em,#fff);
+    text-transform: capitalize;
+    max-width: 602px;
+    margin:0 0 31px 0;
+    background: rgba(255, 255, 255, 0.2);
+    &::before{
+      display: inline-block;
+      content:"";
+      width: 30px;
+      height: 29px;
+      background-image: url("../Images/Rotor.svg");
+      margin: 0 10px 0 20px;
+    }
+  }
+  .SectionOne-MainContainer-Menu4-item2{
+    @include Styles(400,60px,130%,0.02em,#fff);
+    text-transform: capitalize;
+    margin:0 0 29px 0;
+    max-width: 712px;
+  }
+  .SectionOne-MainContainer-Menu4-Link{
+    @include Styles(400,20px,150%,0.02em,#1c2752);
+    padding: 19px 42px;
+    background: #ffb342;
+    margin:0 0 9px 0;
+    text-decoration: none;
+  }
+}
+
+
+.SectionTwo{
+  padding: 140px 0 140px 0;
+   max-width: 1440px;
+  background: white;
+  margin: auto;
+  .SectionTwo-MainContainer{
+    @include AlignmentOfBlock(auto,1200px,flex,stretch);
+    gap:50px;
+  }
+   .SectionTwo-MainContainer-Menu1{
+     background: url("../Images/MainImageInSectionSecond.png") no-repeat center/cover;
+     width: 100%;
+   }
+   .SectionTwo-MainContainer-Menu2{
+     max-width: 575px;
+     .SectionTwo-MainContainer-Menu2-Paragraph{
+       @include Styles(400,18px,150%,0.02em,#1c2752);
+       text-transform: capitalize;
+       display: flex;
+       margin:21px 0 22px 0;
+       background: #f4f4f4;
+       max-width: 250px;
+       &::before{
+         margin: 0 10px 0 20px;
+         content: "";
+         display: inline-block;
+         width: 23px;
+         height: 27px;
+         background-image: url("../Images/IMAGE.svg");
+       }
+     }
+     h2{
+       @include Styles(400,45px,130%,0.01em,#1c2752);
+       margin: 0 0 12px 0;
+     }
+     .SectionTwo-MainContainer-Menu2-Paragraph2{
+       @include Styles(400,18px,150%,0.02em,#7e7e7e);
+       margin:0 0 10px 0 ;
+     }
+     .SectionTwo-MainContainer-Menu2-Paragraph3{
+       @include Styles(400,18px,150%,0.02em,#7e7e7e);
+       margin: 0 0 20px 0;
+     }
+     .SectionTwo-MainContainer-Menu2-Inner{
+       display: flex;
+       gap:40px;
+       max-width: 575px;
+     }
+     .SectionTwo-MainContainer-Menu2-Inner-list{
+       li{
+         @include Styles(400,17px,159%,0.02em,#7e7e7e);
+         list-style: none;
+         margin: 0 0 10px 0;
+       }
+       li:last-of-type{
+         margin: 10px 0 37px 0;
+       }
+       li:first-of-type{
+         margin: 28px 0 10px 0;
+       }
+     }
+   }
+}
+
+
+.SectionThree-MainContainer {
+  @include AlignmentOfBlock(auto, 1440px, flex, stretch);
+  flex-direction: column;
+  align-items: center;
+  background: #ffb342;
+
+  .SectionThree-MainContainer-Menu1 {
+    max-width: 840px;
+    margin: 150px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    p:first-of-type {
+      @include Styles(400, 18px, 150%, 0.02em, #1c2752);
+      text-transform: capitalize;
+      margin: 10px 0 22px 0;
+      display: flex;
+      justify-content: center;
+      max-width: 206px;
+      background: white;
+      padding: 0 20px 0 29px;
+      &::before{
+        margin: 0 10px 0 0;
+        content: "";
+        width: 23px;
+        height: 29px;
+        background-image: url("../Images/whatweoffer.svg");
+        display: inline-block;
+      }
+    }
+    p:last-of-type {
+      @include Styles(400, 18px, 150%, 0.02em, #1c2752);
+      text-transform: capitalize;
+      text-align: center;
+      margin: 10px 0 22px 0;
+    }
+
+    h2 {
+      @include Styles(400, 45px, 130%, 0.01em, #1c2752);
+      text-align: center;
+    }
+  }
+}
+
+
+  .ui-tabs.ui-widget-content {
+    padding: 0;
+    border: 0;
+
+    .ui-tabs-panel{
+      display: block;
+      padding-right: 60px;
+      padding-top:0;
+    }
+
+    .ui-tabs-nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #ffb342;
+      padding: 0 0 40px 0;
+      overflow: hidden;
+
+    }
+
+    .ui-widget-header {
+      border: 0;
+    }
+
+    .ui-corner-top {
+      border: 1px solid #1c2752;
+      float: none;
+      font-size: 0;
+      padding: 19px 46px;
+      background: #ffb342;
+
+      .ui-tabs-anchor {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        float: none;
+        @include Styles(400, 20px, 150%, 0.02em, #222);
+        &::before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          background-image: url("../Images/Commercial.svg");
+          display: inline-block;
+          margin: -5px 10px 0 0;
+      }
+      }
+    }
+    .ui-state-focus{
+      border: 1px solid #fff;
+      background: #fff;
+    }
+  }
+
+.ui-widget-content{
+  background: none;
+}
+  .SectionThree-MainContainer-Menu2-List-Inner{
+    max-width: 1160px;
+    background: white!important;
+    position: relative;
+    top:80px;
+    .SectionThree-MainContainer-Menu2-Inner-List-Image3{
+      width: 416px;
+      height: 355px;
+    }
+    .SectionThree-MainContainer-Menu2-Inner-List-Image1{
+      max-width: 100% ;
+      height: 366px;
+    }
+    .SectionThree-MainContainer-Menu2-Inner-List-Image{
+      width: 416px;
+      height: 366px;
+
+    }
+    .SectionThree-MainContainer-Menu2-Inner-List{
+      max-width: 624px;
+      padding: 0;
+      margin: 50px 70px 60px 50px;
+      display: inline-block;
+
+
+      .SectionThree-MainContainer-Menu2-Inner-List-item1{
+        @include Styles(400, 17px, 159%, 0.02em, #1c2752);
+        text-transform: capitalize;
+        display: inline-block;
+        background: #f4f4f4;
+        padding: 0 28px 0 20px;
+        margin-bottom: 22px;
+
+        &::before{
+          content: "";
+          width: 28px;
+          height: 28px;
+          background-image: url("../Images/ElectricalInstalation.svg");
+          display: inline-block;
+          position: relative;
+          margin: 0 10px 0 0;
+          top:5px;
+        }
+      }
+      h2{
+        @include Styles(400, 45px, 130%, 0.01em, #1c2752);
+        margin-bottom: 12px;
+      }
+      p:nth-of-type(2){
+        @include Styles(400, 18px, 150%, 0.02em,#7e7e7e);
+        margin-bottom: 10px;
+        max-width: 504px;
+      }
+      p:nth-of-type(3){
+        @include Styles(400, 18px, 150%, 0.02em,#7e7e7e);
+        margin-bottom: 30px;
+        max-width: 504px;
+      }
+      a{
+        @include Styles(400, 20px, 150%, 0.02em,#1c2752);
+        padding: 19px 42px;
+        background: #ffb342;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .SectionFour{
+    padding: 240px 0 140px 0;
+    max-width: 1440px;
+    background: #f4f4f4;
+    margin: auto;
+    .SectionFour-MainContainer{
+      @include AlignmentOfBlock(auto, 1200px, flex, stretch);
+      flex-direction: column;
+      align-items: center;
+      gap:50px;
+      .SectionFour-MainContainer-Menu1{
+
+        max-width: 840px;
+        text-align: center;
+        p:first-of-type{
+          @include Styles(400, 18px, 150%, 0.02em,#1c2752);
+          text-transform: capitalize;
+          margin: 10px 0 22px 0;
+          display: inline-block;
+          background: white;
+          padding: 0 20px 5px 20px;
+          &::before{
+            position: relative;
+            top:5px;
+            margin: 0 10px 0 0;
+            content: "";
+            width: 22px;
+            height: 27px;
+            display: inline-block;
+            background-image: url("../Images/AreaOfService.svg");
+          }
+        }
+        h2{
+          @include Styles(400, 45px, 130%, 0.01em, #1c2752);
+          margin: 0 0 12px 0;
+          text-align: center;
+        }
+        p:last-of-type{
+          text-align: center;
+          @include Styles(400, 18px, 150%, 0.02em,#1c2752);
+        }
+      }
+    }
+  }
+
+.SectionFour-MainContainer-Menu2{
+  @include AlignmentOfBlock(0, 1200px, flex, stretch);
+  gap:30px;
+  flex-wrap: wrap;
+  .SectionFour-MainContainer-Menu2-item{
+    padding-bottom: 50px;
+    background: #1c2752;
+    width: 31%;
+    img{
+      max-width: 100%;
+      margin: 50px 0 20px 35px;
+    }
+    h3{
+      @include Styles(400, 25px, 150%, 0.01em,#ffb342);
+      text-transform: capitalize;
+      margin: 0 0 15px 35px;
+    }
+    p{
+      @include Styles(400, 18px, 150%, 0.01em,#d2d2d2);
+      margin: 0 0 22px 35px;
+    }
+    a{
+      @include Styles(400, 18px, 150%, 0.01em,#fff);
+      margin: 0 0 0 35px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.SectionFive-MainContainer{
+  @include AlignmentOfBlock(auto,1440px,flex,stretch);
+  .SectionFive-MainContainer-Menu1{
+    max-width: 720px;
+    position: relative;
+    img{
+      width: 720px;
+    }
+    .SectionFive-MainContainer-Menu1-Inner{
+      max-width: 560px;
+      position: absolute;
+      top:140px;
+      left:80px;
+      background: rgba(28, 39, 82, 0.86);
+    }
+    .SectionFive-MainContainer-Menu1-Inner-List{
+
+       li{
+         border: 1px solid white;
+         list-style: none;
+         @include Styles(400, 25px, 140%, 0.01em,#fff);
+       }
+      .SectionFive-MainContainer-Menu1-Inner-List-item1{
+        margin: 100px 80px 25px 80px;
+        padding: 0 100px 0 0;
+        span{
+          margin: 0 15px 0 0;
+          display: inline-block;
+          padding: 16px 28px 16px 21px;
+          background: #ffb342;
+          @include Styles(400, 24px, 146%, 0.02em,#1c2752);
+      }
+    }
+      .SectionFive-MainContainer-Menu1-Inner-List-item2{
+        margin: 0 80px 25px 80px;
+        padding: 0 100px 0 0;
+        span{
+          margin: 0 15px 0 0;
+          display: inline-block;
+          padding: 16px 40px 16px 21px;
+          background: #ffb342;
+          @include Styles(400, 24px, 146%, 0.02em,#1c2752);
+        }
+      }
+      .SectionFive-MainContainer-Menu1-Inner-List-item3{
+        margin: 0 80px 25px 80px;
+        padding: 0 90px 0 0;
+        span{
+          margin: 0 15px 0 0;
+          display: inline-block;
+          padding: 16px 40px 16px 21px;
+          background: #ffb342;
+          @include Styles(400, 24px, 146%, 0.02em,#1c2752);
+        }
+      }
+      .SectionFive-MainContainer-Menu1-Inner-List-item4{
+        margin: 0 80px 124px 80px;
+        padding: 0 90px 0 0;
+        span{
+          margin: 0 15px 0 0;
+          display: inline-block;
+          padding: 16px 26px 16px 21px;
+          background: #ffb342;
+          @include Styles(400, 24px, 146%, 0.02em,#1c2752);
+        }
+      }
+  }
+}
+}
+
+.SectionFive-MainContainer-Menu2{
+  max-width: 720px;
+  background: white;
+  .SectionFive-MainContainer-Menu2-Upper{
+    max-width: 590px;
+    margin:93px 0 40px 70px;
+    p:first-of-type{
+      margin: 10px 0 23px 0;
+      @include Styles(400,18px, 150%, 0.02em,#1c2752);
+      text-transform: capitalize;
+      background: #f4f4f4;
+      display: inline-block;
+      padding: 0 20px;
+      &::before{
+        position: relative;
+        top:5px;
+        margin-right: 10px;
+        content: "";
+        display: inline-block;
+        width:22px;
+        height: 27px;
+        background-image: url("../Images/WhyChose.svg");
+      }
+    }
+    h2{
+      margin: 0 0 11px 0;
+      @include Styles(400, 45px, 130%, 0.01em,#1c2752);
+    }
+    p:last-of-type{
+      @include Styles(400, 17px, 159%, 0.02em,#7e7e7e);
+    }
+  }
+}
+.SectionFive-MainContainer-Menu2-Lower{
+  max-width: 502px;
+  margin: 0 0 0 70px;
+  a{
+    @include Styles(400, 20px, 140%, 0.02em,#1c2752);
+    display: flex;
+
+    &::before{
+      margin-right: 20px;
+      content: "";
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      background-image: url("../Images/Right.svg");
+    }
+  }
+  p{
+    @include Styles(400, 17px, 159%, 0.02em,#7e7e7e);
+    display: inline-block;
+    margin-left: 52px;
+  }
+  p:first-of-type{
+    margin-bottom: 32px;
+  }
+  p:nth-of-type(2){
+    margin-bottom: 32px;
+  }
+
+}
+
+
+
+
+
+
+
+
