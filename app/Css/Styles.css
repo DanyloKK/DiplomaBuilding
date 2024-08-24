@@ -735,4 +735,491 @@ body {
   margin-bottom: 32px;
 }
 
+.SectionSix {
+  padding-bottom: 150px;
+}
+
+.SectionSix-MainContainer {
+  margin: auto;
+  max-width: 1440px;
+  display: block;
+  justify-content: stretch;
+  background: #1c2752;
+  padding: 140px 0 120px 0;
+}
+.SectionSix-MainContainer .SectionSix-MainContainer-Menu1 {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 120px 50px 120px;
+}
+.SectionSix-MainContainer .SectionSix-MainContainer-Menu1 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  text-transform: capitalize;
+  text-align: center;
+  background: white;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  margin-bottom: 22px;
+}
+.SectionSix-MainContainer .SectionSix-MainContainer-Menu1 p::before {
+  position: relative;
+  top: 5px;
+  margin: 0 10px 0 0;
+  content: "";
+  width: 22px;
+  height: 27px;
+  display: inline-block;
+  background-image: url("../Images/AreaOfService.svg");
+}
+.SectionSix-MainContainer .SectionSix-MainContainer-Menu1 h2 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.SectionSix-MainContainer-Menu {
+  margin: 0 21px 0 21px;
+  max-width: 1400px;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  justify-content: space-between;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item1 {
+  background: white;
+  max-width: 320px;
+  padding: 21px 21px 27px 21px;
+  display: inline-block;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item1 img {
+  width: 100%;
+  margin-bottom: 27px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item1 h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item1 figcaption {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  text-align: center;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item2 {
+  background: white;
+  max-width: 320px;
+  padding: 21px 21px 27px 21px;
+  display: inline-block;
+  align-self: end;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item2 img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item2 h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  text-align: center;
+  margin-bottom: 1px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item2 figcaption {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  text-align: center;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item3 {
+  background: white;
+  max-width: 320px;
+  padding: 21px 21px 27px 21px;
+  display: inline-block;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item3 img {
+  width: 100%;
+  margin-bottom: 27px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item3 h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item3 figcaption {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  text-align: center;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item4 {
+  background: white;
+  width: 320px;
+  padding: 21px 21px 27px 21px;
+  display: inline-block;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item4 img {
+  max-width: 100%;
+  margin-bottom: 27px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item4 h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item4 figcaption {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+.SectionSeven {
+  padding: 140px 0 0 0;
+}
+.SectionSeven .SectionSeven-MainContainer {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: stretch;
+}
+.SectionSeven .SectionSeven-MainContainer .SectionSeven-MainContainer-Menu {
+  max-width: 591px;
+}
+.SectionSeven .SectionSeven-MainContainer .SectionSeven-MainContainer-Menu1 {
+  max-width: 561px;
+}
+
+.SectionSeven-MainContainer-Menu .Menu-Item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  text-transform: capitalize;
+  margin: 0 0 22px 0;
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 0 20px;
+}
+.SectionSeven-MainContainer-Menu .Menu-Item::before {
+  position: relative;
+  top: 5px;
+  content: "";
+  width: 22px;
+  height: 27px;
+  display: inline-block;
+  background-image: url("../Images/Testimonial.svg");
+  margin: 0 10px 0 0;
+}
+.SectionSeven-MainContainer-Menu .Menu-Item1 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  text-transform: capitalize;
+  margin: 0 0 41px 0;
+}
+
+.SectionSeven-MainContainer-Menu-Inner {
+  padding: 41px 60px 36px 41px;
+  border: 1px solid #e4e4e4;
+  margin: 0 0 40px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item {
+  border-bottom: 1px solid #e4e4e4;
+  margin: 0 0 20px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item img {
+  width: 55px;
+  height: 55px;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
+  padding: 0 0 21px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner .Customer-item {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+.SectionSeven-MainContainer-Menu-Inner .Customer-item span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item {
+  margin: 0;
+  max-width: 509px;
+  display: flex;
+  justify-content: space-between;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item img {
+  margin: 0 25px 0 0;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
+  display: flex;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner-Item .SectionSeven-MainContainer-Menu-Inner-Item-Customer p {
+  margin: 5px 0 0 10px;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner1 blockquote {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  font-style: italic;
+  margin: 0 0 23px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner1 blockquote span {
+  color: #1c2752;
+}
+
+.SectionSeven-MainContainer-Menu-Inner2 {
+  max-width: 591px;
+  background: #ffb342;
+  padding: 60px 0 50px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List {
+  max-width: 511px;
+  padding: 10px 0 0 0;
+  margin: 0 0 0 40px;
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List .Item2_Of_list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  text-transform: capitalize;
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 0 20px;
+  margin: 0 0 20px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List .Item2_Of_list::before {
+  position: relative;
+  top: 5px;
+  content: "";
+  width: 22px;
+  height: 27px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  background-image: url("../Images/Testimonial.svg");
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List .Item3_Of_list {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  margin: 0 0 13px 0;
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List .Menu-Item4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List2 {
+  max-width: 511px;
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List2 span {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin: 0 0 0 40px;
+}
+.SectionSeven-MainContainer-Menu-Inner2 .SectionSeven-MainContainer-Menu-Inner2-List2 span::before {
+  position: relative;
+  top: 15px;
+  margin: 0 20px 0 0;
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../Images/Phone.svg");
+}
+
+.SectionSeven-MainContainer-Menu1 {
+  max-width: 563px;
+  margin: 0 0 0 45px;
+}
+.SectionSeven-MainContainer-Menu1 .Paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  text-transform: capitalize;
+  display: inline-block;
+  background: #f4f4f4;
+  margin: 0 0 22px 0;
+  padding: 0 20px;
+}
+.SectionSeven-MainContainer-Menu1 .Paragraph::before {
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 5px;
+  content: "";
+  width: 22px;
+  height: 27px;
+  display: inline-block;
+  background-image: url("../Images/Testimonial.svg");
+}
+.SectionSeven-MainContainer-Menu1 .Title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  margin: 0 0 39px 0;
+  max-width: 425px;
+}
+
+.SectionSeven-MainContainer-Menu1-Form {
+  max-width: 564px;
+  padding: 70px 40px 75px 40px;
+  background: #f4f4f4;
+}
+.SectionSeven-MainContainer-Menu1-Form .First_Input-Block {
+  margin: 0 0 25px 0;
+}
+.SectionSeven-MainContainer-Menu1-Form .First_Input-Block .First_Input {
+  width: 484px;
+  height: 65px;
+  background: white;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+.SectionSeven-MainContainer-Menu1-Form .First_Input-Block .First_Input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  padding: 0 0 0 45px;
+}
+.SectionSeven-MainContainer-Menu1-Form .Second_Input-Block {
+  margin: 0 0 25px 0;
+}
+.SectionSeven-MainContainer-Menu1-Form .Second_Input-Block .Second_Input {
+  width: 484px;
+  height: 65px;
+  background: white;
+}
+.SectionSeven-MainContainer-Menu1-Form .Second_Input-Block .Second_Input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  padding: 0 0 0 45px;
+}
+.SectionSeven-MainContainer-Menu1-Form .Third_Input-Block {
+  margin: 0 0 25px 0;
+}
+.SectionSeven-MainContainer-Menu1-Form .Third_Input-Block .Third_Input {
+  width: 484px;
+  height: 65px;
+  background: white;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+.SectionSeven-MainContainer-Menu1-Form .Third_Input-Block .Third_Input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  padding: 0 0 0 45px;
+}
+.SectionSeven-MainContainer-Menu1-Form .Fourth_Input-Block {
+  margin: 0 0 25px 0;
+}
+.SectionSeven-MainContainer-Menu1-Form .Fourth_Input-Block .Fourth_Input {
+  width: 484px;
+  height: 65px;
+  background: white;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+.SectionSeven-MainContainer-Menu1-Form .Fourth_Input-Block .Fourth_Input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  padding: 0 0 0 45px;
+}
+
+.ServiceDescription {
+  width: 484px;
+  height: 150px;
+  resize: none;
+  overflow: auto;
+  margin: 0 0 35px 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+
+.SubmitButton {
+  width: 484px;
+  height: 68px;
+  background: #ffb342;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+
 /*# sourceMappingURL=Styles.css.map */

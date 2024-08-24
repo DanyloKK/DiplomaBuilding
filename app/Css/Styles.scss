@@ -596,6 +596,390 @@ body{
   }
 
 }
+.SectionSix{
+  padding-bottom: 150px;
+}
+.SectionSix-MainContainer{
+  @include AlignmentOfBlock(auto,1440px,block,stretch);
+  background: #1c2752;
+  padding: 140px 0 120px 0;
+  .SectionSix-MainContainer-Menu1{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 120px 50px 120px;
+  p{
+    @include Styles(400, 18px, 150%, 0.02em,#1c2752);
+    text-transform: capitalize;
+    text-align: center;
+    background: white;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    margin-bottom: 22px;
+    &::before{
+      position: relative;
+      top:5px;
+      margin: 0 10px 0 0;
+      content: "";
+      width: 22px;
+      height:27px;
+      display: inline-block;
+      background-image: url("../Images/AreaOfService.svg");
+    }
+  }
+  h2{
+    @include Styles(400, 45px, 130%, 0.01em,#fff);
+  }
+  }
+}
+
+.SectionSix-MainContainer-Menu{
+  margin: 0 21px 0 21px;
+  max-width: 1400px;
+  display: flex;
+  align-items: start;
+  gap:30px;
+  justify-content: space-between;
+
+   .SectionSix-MainContainer-Menu-Item1{
+     background: white;
+     max-width: 320px;
+     padding: 21px 21px 27px 21px;
+     display: inline-block;
+     img{
+       width: 100%;
+       margin-bottom: 27px;
+
+     }
+     h3{
+       @include Styles(400, 25px, 150%, 0.01em,#1c2752);
+       text-align: center;
+       margin-bottom: 4px;
+     }
+     figcaption{
+       @include Styles(400, 17px, 159%, 0.02em,#7e7e7e);
+       text-align: center;
+     }
+   }
+
+  .SectionSix-MainContainer-Menu-Item2{
+    background: white;
+    max-width: 320px;
+    padding: 21px 21px 27px 21px;
+    display: inline-block;
+    align-self: end;
+
+    img{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    h3{
+      @include Styles(400, 25px, 150%, 0.01em,#1c2752);
+      text-align: center;
+      margin-bottom: 1px;
+    }
+    figcaption{
+      @include Styles(400, 17px, 159%, 0.02em,#7e7e7e);
+      text-align: center;
+    }
+  }
+  .SectionSix-MainContainer-Menu-Item3{
+    background: white;
+    max-width: 320px;
+    padding: 21px 21px 27px 21px;
+    display: inline-block;
+    img{
+      width: 100%;
+      margin-bottom: 27px;
+    }
+    h3{
+      @include Styles(400, 25px, 150%, 0.01em,#1c2752);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    figcaption{
+      @include Styles(400, 17px, 159%, 0.02em,#7e7e7e);
+      text-align: center;
+    }
+  }
+  .SectionSix-MainContainer-Menu-Item4{
+    background: white;
+    width: 320px;
+    padding: 21px 21px 27px 21px;
+    display: inline-block;
+    img{
+      max-width: 100%;
+      margin-bottom: 27px;
+    }
+    h3{
+      @include Styles(400, 25px, 150%, 0.01em,#1c2752);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    figcaption{
+      @include Styles(400, 17px, 159%, 0.02em,#7e7e7e);
+      text-align: center;
+    }
+  }
+}
+
+
+.SectionSeven{
+  padding: 140px 0 0 0;
+  .SectionSeven-MainContainer{
+    @include AlignmentOfBlock(auto , 1200px ,flex , stretch);
+    .SectionSeven-MainContainer-Menu{
+      max-width: 591px;
+    }
+    .SectionSeven-MainContainer-Menu1{
+      max-width: 561px;
+    }
+  }
+}
+
+.SectionSeven-MainContainer-Menu{
+
+  .Menu-Item{
+    @include Styles(400, 18px, 150%, 0.02em,#1c2752);
+    text-transform: capitalize;
+    margin: 0 0 22px 0;
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 0 20px;
+    &::before{
+      position: relative;
+      top:5px;
+      content: "";
+      width: 22px;
+      height: 27px;
+      display: inline-block;
+      background-image: url("../Images/Testimonial.svg");
+      margin: 0 10px 0 0;
+    }
+  }
+  .Menu-Item1{
+    @include Styles(400, 45px, 130%, 0.01em,#1c2752);
+    text-transform: capitalize;
+    margin: 0 0 41px 0;
+  }
+}
+.SectionSeven-MainContainer-Menu-Inner {
+  padding: 41px 60px 36px 41px;
+  border: 1px solid #e4e4e4;
+  margin: 0 0 40px 0;
+
+  .SectionSeven-MainContainer-Menu-Inner-Item {
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0 0 20px 0;
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
+    padding: 0 0 21px 0;
+  }
+  .Customer-item {
+    @include Styles(400, 22px, 110%, 0.02em, #1c2752);
+
+    span {
+      @include Styles(400, 18px, 120%, 0.02em, #7e7e7e);
+    }
+  }
+
+
+  .SectionSeven-MainContainer-Menu-Inner-Item {
+    @include AlignmentOfBlock(0, 509px, flex, space-between);
+    img{
+      margin: 0 25px 0 0;
+    }
+
+    .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
+      display: flex;
+
+      p {
+        margin:5px 0 0 10px;
+      }
+    }
+  }
+
+  .SectionSeven-MainContainer-Menu-Inner1 {
+    blockquote {
+      @include Styles(700, 18px, 150%, 0.02em, #7e7e7e);
+      font-style: italic;
+      margin: 0 0 23px 0;
+
+      span {
+        color: #1c2752;
+      }
+    }
+  }
+}
+
+.SectionSeven-MainContainer-Menu-Inner2{
+  max-width: 591px;
+  background: #ffb342;
+  padding: 60px 0 50px 0 ;
+  .SectionSeven-MainContainer-Menu-Inner2-List{
+    max-width: 511px;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 40px;
+    .Item2_Of_list{
+      @include Styles(400, 18px, 150%, 0.02em, #1c2752);
+      text-transform: capitalize;
+      display: inline-block;
+      background: #f4f4f4;
+      padding: 0 20px;
+      margin: 0 0 20px 0;
+      &::before{
+        position: relative;
+        top:5px;
+        content: "";
+        width: 22px;
+        height: 27px;
+        display: inline-block;
+        margin:0 10px 0 0;
+        background-image: url("../Images/Testimonial.svg");
+      }
+  }
+    .Item3_Of_list{
+      @include Styles(400, 25px, 130%, 0.01em, #1c2752);
+      margin: 0 0 13px 0;
+    }
+    .Menu-Item4{
+      @include Styles(400, 18px, 150%, 0.02em, #1c2752);
+    }
+  }
+}
+
+
+.SectionSeven-MainContainer-Menu-Inner2{
+.SectionSeven-MainContainer-Menu-Inner2-List2{
+  max-width: 511px;
+  span{
+    @include Styles(400, 30px, 150%, 0.01em, #fff);
+    margin: 0 0 0 40px;
+    &::before{
+      position: relative;
+      top:15px;
+      margin: 0 20px 0 0;
+      content: "";
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background-image: url("../Images/Phone.svg");
+    }
+  }
+
+}
+}
+
+
+.SectionSeven-MainContainer-Menu1{
+  max-width: 563px;
+  margin: 0 0 0 45px;
+  .Paragraph{
+    @include Styles(400, 18px,150%, 0.02em, #1c2752);
+    text-transform: capitalize;
+    display: inline-block;
+    background: #f4f4f4;
+    margin: 0 0 22px 0;
+
+    padding: 0 20px;
+    &::before{
+      margin: 0 10px 0 0;
+      position: relative;
+      top:5px;
+      content:"";
+      width: 22px;
+      height: 27px;
+      display: inline-block;
+      background-image: url("../Images/Testimonial.svg");
+    }
+  }
+  .Title{
+    @include Styles(400, 45px,130%, 0.01em, #1c2752);
+    margin: 0 0 39px 0;
+    max-width: 425px;
+  }
+}
+
+.SectionSeven-MainContainer-Menu1-Form{
+  max-width: 564px;
+  padding: 70px 40px 75px 40px;
+  background: #f4f4f4;
+  .First_Input-Block{
+    margin: 0 0 25px 0;
+   .First_Input{
+     width: 484px;
+     height: 65px;
+     background: white;
+     @include Styles(400, 17px,159%, 0.02em, #1c2752);
+     &::placeholder{
+       @include Styles(400, 17px,159%, 0.02em, #1c2752);
+       padding: 0 0 0 45px;
+     }
+   }
+
+  }
+  .Second_Input-Block{
+    margin: 0 0 25px 0;
+    .Second_Input{
+      width: 484px;
+      height: 65px;
+      background: white;
+      &::placeholder{
+        @include Styles(400, 17px,159%, 0.02em, #1c2752);
+        padding: 0 0 0 45px;
+      }
+    }
+
+  }
+  .Third_Input-Block{
+    margin: 0 0 25px 0;
+    .Third_Input{
+      width: 484px;
+      height: 65px;
+      background: white;
+      @include Styles(400, 17px,159%, 0.02em, #1c2752);
+      &::placeholder{
+        @include Styles(400, 17px,159%, 0.02em, #1c2752);
+        padding: 0 0 0 45px;
+      }
+    }
+
+  }
+  .Fourth_Input-Block{
+    margin: 0 0 25px 0;
+    .Fourth_Input{
+      width: 484px;
+      height: 65px;
+      background: white;
+      @include Styles(400, 17px,159%, 0.02em, #1c2752);
+      &::placeholder{
+        @include Styles(400, 17px,159%, 0.02em, #1c2752);
+        padding: 0 0 0 45px;
+      }
+    }
+
+  }
+}
+
+.ServiceDescription{
+  width: 484px;
+  height: 150px;
+ resize: none;
+  overflow: auto;
+  margin: 0 0 35px 0;
+  @include Styles(400, 17px,159%, 0.02em, #1c2752);
+}
+.SubmitButton{
+  width: 484px;
+  height: 68px;
+  background: #ffb342;
+  @include Styles(700, 17px,159%, 0.02em, #1c2752);
+}
 
 
 
