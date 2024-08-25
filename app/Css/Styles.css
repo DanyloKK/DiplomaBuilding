@@ -1549,12 +1549,14 @@ body {
 }
 
 .Footer {
-  padding: 50px 0 0 0;
+  padding: 50px 0 87px 0;
   background: #1C2752;
 }
 .Footer .Footer-MainContainer {
   max-width: 1200px;
   margin: auto;
+  border-bottom: 1px solid white;
+  position: relative;
 }
 
 .Footer-MainContainer-Upper {
@@ -1562,13 +1564,15 @@ body {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid black;
+  padding: 0 0 40px 0;
 }
-
-.Footer-MainContainer-Upper-Link {
+.Footer-MainContainer-Upper .Footer-MainContainer-Upper-Link {
   display: flex;
   max-width: 280px;
 }
-.Footer-MainContainer-Upper-Link p {
+.Footer-MainContainer-Upper .Footer-MainContainer-Upper-Link p {
   margin: 16px 0 0 15px;
   font-weight: 400;
   font-size: 20px;
@@ -1576,12 +1580,100 @@ body {
   letter-spacing: 0.02em;
   color: #fff;
 }
-.Footer-MainContainer-Upper-Link p span {
+.Footer-MainContainer-Upper .Footer-MainContainer-Upper-Link p span {
   font-weight: 400;
   font-size: 17px;
   line-height: 159%;
   letter-spacing: 0.02em;
   color: #fff;
+}
+
+.Footer-MainContainer-Upper-Link1 {
+  margin: 15px 0 0 0;
+}
+
+.Footer-MainContainer-Lower {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.Footer-MainContainer-Lower .Footer-MainContainer-Lower-Left {
+  margin: 106px 0 0 0;
+  max-width: 411px;
+}
+.Footer-MainContainer-Lower .Footer-MainContainer-Lower-Left p {
+  max-width: 391px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 52px;
+}
+
+.Footer-MainContainer-Lower-Left-List {
+  display: flex;
+  gap: 15px;
+}
+.Footer-MainContainer-Lower-Left-List li {
+  list-style: none;
+}
+
+.Ulka {
+  margin: 51px 0 0 0;
+}
+.Ulka li:first-of-type {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #ffb342;
+  list-style: none;
+  margin: 0 0 11px 0;
+}
+.Ulka li {
+  list-style: none;
+}
+.Ulka li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.Ulka li:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.Last-List {
+  margin-right: 50px;
+}
+
+.LastButOne {
+  margin-right: 100px;
+}
+
+.Line {
+  width: 223px;
+  height: 1px;
+  border: 1px solid #4B557D;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 90%;
+  left: 28%;
+}
+
+.Line2 {
+  width: 223px;
+  height: 1px;
+  border: 1px solid #4B557D;
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  transform: rotate(90deg);
 }
 
 /*# sourceMappingURL=Styles.css.map */
