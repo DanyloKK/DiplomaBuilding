@@ -787,7 +787,7 @@ body {
   margin: 0 21px 0 21px;
   max-width: 1400px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 30px;
   justify-content: space-between;
 }
@@ -827,7 +827,7 @@ body {
 }
 .SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item2 img {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .SectionSix-MainContainer-Menu .SectionSix-MainContainer-Menu-Item2 h3 {
   font-weight: 400;
@@ -1006,6 +1006,13 @@ body {
 .SectionSeven-MainContainer-Menu-Inner .SectionSeven-MainContainer-Menu-Inner1 blockquote span {
   color: #1c2752;
 }
+.SectionSeven-MainContainer-Menu-Inner a svg {
+  width: 50px;
+  height: 50px;
+}
+.SectionSeven-MainContainer-Menu-Inner a path:hover {
+  fill: #ffb342;
+}
 
 .SectionSeven-MainContainer-Menu-Inner2 {
   max-width: 591px;
@@ -1139,6 +1146,9 @@ body {
   color: #1c2752;
   padding: 0 0 0 45px;
 }
+.SectionSeven-MainContainer-Menu1-Form .First_Input-Block .First_Input:focus::placeholder {
+  opacity: 0;
+}
 .SectionSeven-MainContainer-Menu1-Form .Second_Input-Block {
   margin: 0 0 25px 0;
 }
@@ -1154,6 +1164,9 @@ body {
   letter-spacing: 0.02em;
   color: #1c2752;
   padding: 0 0 0 45px;
+}
+.SectionSeven-MainContainer-Menu1-Form .Second_Input-Block .Second_Input:focus::placeholder {
+  opacity: 0;
 }
 .SectionSeven-MainContainer-Menu1-Form .Third_Input-Block {
   margin: 0 0 25px 0;
@@ -1176,6 +1189,9 @@ body {
   color: #1c2752;
   padding: 0 0 0 45px;
 }
+.SectionSeven-MainContainer-Menu1-Form .Third_Input-Block .Third_Input:focus::placeholder {
+  opacity: 0;
+}
 .SectionSeven-MainContainer-Menu1-Form .Fourth_Input-Block {
   margin: 0 0 25px 0;
 }
@@ -1196,6 +1212,9 @@ body {
   letter-spacing: 0.02em;
   color: #1c2752;
   padding: 0 0 0 45px;
+}
+.SectionSeven-MainContainer-Menu1-Form .Fourth_Input-Block .Fourth_Input:focus::placeholder {
+  opacity: 0;
 }
 
 .ServiceDescription {
@@ -1220,6 +1239,349 @@ body {
   line-height: 159%;
   letter-spacing: 0.02em;
   color: #1c2752;
+}
+.SubmitButton:hover {
+  color: white;
+}
+
+.SectionEight {
+  padding: 60px 0 140px 0;
+}
+
+.SectionEight_MainContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+.SectionEight_MainContainer .SectionEight_MainContainer_Titles {
+  max-width: 840px;
+  text-align: center;
+  margin: 0 180px 45px 180px;
+}
+.SectionEight_MainContainer .SectionEight_MainContainer_Titles .TitleH {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  text-transform: capitalize;
+  margin: 0 0 22px 0;
+  background: #f4f4f4;
+  display: inline-block;
+  padding: 0 20px;
+}
+.SectionEight_MainContainer .SectionEight_MainContainer_Titles .TitleH::before {
+  position: relative;
+  top: 5px;
+  content: "";
+  width: 22px;
+  height: 27px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  background-image: url("../Images/Testimonial.svg");
+}
+.SectionEight_MainContainer .SectionEight_MainContainer_Titles .Title2 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  max-width: 536px;
+  margin: 0 152px;
+}
+
+.SectionEight_MainContainer-Links {
+  margin: 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.SectionEight_MainContainer-Links a svg {
+  transition: 1s ease transform 1s;
+}
+.SectionEight_MainContainer-Links a svg:hover {
+  stroke: #1c2752;
+  stroke-width: 3;
+}
+
+.SectionNine {
+  background: #f4f4f4;
+  padding: 140px 0 140px 0;
+}
+.SectionNine .SectionNine-MainContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.SectionNine-MainContainer-Upper {
+  padding: 0 0 18px 0;
+  margin: 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.SectionNine-MainContainer-Upper .SectionNine-MainContainer-Upper-Left {
+  max-width: 592px;
+}
+.SectionNine-MainContainer-Upper .SectionNine-MainContainer-Upper-Left .Left-Item1 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  background: #e4e4e4;
+  margin: 10px 0 23px 0;
+  display: inline-block;
+  padding: 0 20px;
+}
+.SectionNine-MainContainer-Upper .SectionNine-MainContainer-Upper-Left .Left-Item1::before {
+  content: "";
+  width: 22px;
+  height: 27px;
+  display: inline-block;
+  background-image: url("../Images/Testimonial.svg");
+}
+.SectionNine-MainContainer-Upper .Left-Item2 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  max-width: 492px;
+}
+.SectionNine-MainContainer-Upper .SectionNine-MainContainer-Upper-Right {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  margin: 41px 7px 16px 0;
+  max-width: 585px;
+}
+
+.SectionNine-MainContainer-Middle {
+  margin: 40px 0 0 0 !important;
+  gap: 30px;
+  margin: 40px 0 0 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.SectionNine-MainContainer-Middle article {
+  background: white;
+  max-width: 380px;
+  padding: 40px 50px 40px 50px;
+}
+.SectionNine-MainContainer-Middle article .Article-Link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  padding: 19px 90px;
+  text-decoration: none;
+  background: #ffb342;
+}
+.SectionNine-MainContainer-Middle article .Article-Link:hover {
+  color: white;
+}
+.SectionNine-MainContainer-Middle article .Article-Element {
+  padding: 0 0 36px 0;
+  border-bottom: 1px solid #d7d7d7;
+  margin: 0 0 29px 0;
+}
+.SectionNine-MainContainer-Middle article .Article-Element .Article-Element-Title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  margin: 0 0 7px 0;
+}
+.SectionNine-MainContainer-Middle article .Article-Element .Article-Element-Span1 {
+  display: inline-block;
+  margin: 0 43px 0 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+}
+.SectionNine-MainContainer-Middle article .Article-Element .Article-Element-Span2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+}
+
+.SectionNine-MainContainer-Middle-List {
+  max-width: 300px;
+  padding: 0 40px 0 0;
+  margin: 0 0 59px 0;
+}
+.SectionNine-MainContainer-Middle-List .SectionNine-MainContainer-Middle-List-Item.LastOne {
+  margin: 0;
+}
+.SectionNine-MainContainer-Middle-List .SectionNine-MainContainer-Middle-List-Item {
+  list-style: none;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  text-transform: capitalize;
+  margin: 0 0 20px 0;
+}
+.SectionNine-MainContainer-Middle-List .SectionNine-MainContainer-Middle-List-Item::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  margin: 0 12px 0 0;
+  background-image: url("../Images/True.svg");
+}
+
+.SectionNine-MainContainer-Lower {
+  margin: 61px 0 0 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: stretch;
+  gap: 100px;
+}
+.SectionNine-MainContainer-Lower .SectionNine-MainContainer-Lower-Inner1.Menu {
+  max-width: 585px;
+}
+.SectionNine-MainContainer-Lower .SectionNine-MainContainer-Lower-Inner1.Menu .Menu-Title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  margin: 0 0 9px 0;
+}
+.SectionNine-MainContainer-Lower .SectionNine-MainContainer-Lower-Inner1.Menu .Menu-Title::before {
+  margin: 0 15px 0 0;
+  position: relative;
+  top: 10px;
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-image: url("../Images/Truth.svg");
+}
+.SectionNine-MainContainer-Lower .SectionNine-MainContainer-Lower-Inner1.Menu .Menu-Paragraph {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #7e7e7e;
+  margin: 0 0 7px 0;
+  max-width: 510px;
+  padding: 0 42px;
+}
+
+.SectionTen-MainContainer {
+  padding: 140px 0 52px 0;
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  background: #ffb342;
+}
+.SectionTen-MainContainer .SectionTen-MainContainer-Menu {
+  max-width: 410px;
+}
+.SectionTen-MainContainer .SectionTen-MainContainer-Menu .SectionTen-MainContainer-Menu-Title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #1c2752;
+  margin: 0 0 9px 0;
+}
+.SectionTen-MainContainer .SectionTen-MainContainer-Menu .SectionTen-MainContainer-Menu-Paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+}
+
+.SectionTen-MainContainer-Form {
+  max-width: 570px;
+  display: flex;
+  align-items: start;
+}
+.SectionTen-MainContainer-Form .SectionTen-MainContainer-Form-Input {
+  width: 389px;
+  height: 68px;
+  background: #ffb342;
+  border: 1px solid #fff;
+  border-right: none;
+}
+.SectionTen-MainContainer-Form .SectionTen-MainContainer-Form-Input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  padding: 0 0 0 25px;
+}
+.SectionTen-MainContainer-Form .SectionTen-MainContainer-Form-Input:focus::placeholder {
+  opacity: 0;
+}
+.SectionTen-MainContainer-Form .SubscribeButton {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #1c2752;
+  background: white;
+  padding: 20px 49px;
+  border: none;
+  transition: 0.8s ease;
+}
+.SectionTen-MainContainer-Form .SubscribeButton:hover {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(90deg, rgb(63, 94, 251) 0%, rgb(252, 70, 242) 100%);
+  color: #1c2752;
+  transition: 1s ease;
+}
+
+.Footer {
+  padding: 50px 0 0 0;
+  background: #1C2752;
+}
+.Footer .Footer-MainContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.Footer-MainContainer-Upper {
+  margin: 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer-MainContainer-Upper-Link {
+  display: flex;
+  max-width: 280px;
+}
+.Footer-MainContainer-Upper-Link p {
+  margin: 16px 0 0 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.Footer-MainContainer-Upper-Link p span {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 
 /*# sourceMappingURL=Styles.css.map */

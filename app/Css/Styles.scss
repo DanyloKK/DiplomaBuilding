@@ -636,7 +636,7 @@ body{
   margin: 0 21px 0 21px;
   max-width: 1400px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap:30px;
   justify-content: space-between;
 
@@ -645,6 +645,7 @@ body{
      max-width: 320px;
      padding: 21px 21px 27px 21px;
      display: inline-block;
+
      img{
        width: 100%;
        margin-bottom: 27px;
@@ -668,9 +669,10 @@ body{
     display: inline-block;
     align-self: end;
 
+
     img{
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
     h3{
       @include Styles(400, 25px, 150%, 0.01em,#1c2752);
@@ -687,6 +689,7 @@ body{
     max-width: 320px;
     padding: 21px 21px 27px 21px;
     display: inline-block;
+
     img{
       width: 100%;
       margin-bottom: 27px;
@@ -706,6 +709,7 @@ body{
     width: 320px;
     padding: 21px 21px 27px 21px;
     display: inline-block;
+
     img{
       max-width: 100%;
       margin-bottom: 27px;
@@ -780,6 +784,7 @@ body{
   .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
     padding: 0 0 21px 0;
   }
+
   .Customer-item {
     @include Styles(400, 22px, 110%, 0.02em, #1c2752);
 
@@ -791,7 +796,8 @@ body{
 
   .SectionSeven-MainContainer-Menu-Inner-Item {
     @include AlignmentOfBlock(0, 509px, flex, space-between);
-    img{
+
+    img {
       margin: 0 25px 0 0;
     }
 
@@ -799,7 +805,7 @@ body{
       display: flex;
 
       p {
-        margin:5px 0 0 10px;
+        margin: 5px 0 0 10px;
       }
     }
   }
@@ -815,7 +821,19 @@ body{
       }
     }
   }
-}
+
+  a {
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    path:hover {
+      fill: #ffb342;
+    }
+  }
+ }
+
 
 .SectionSeven-MainContainer-Menu-Inner2{
   max-width: 591px;
@@ -920,6 +938,11 @@ body{
        @include Styles(400, 17px,159%, 0.02em, #1c2752);
        padding: 0 0 0 45px;
      }
+     &:focus{
+     &::placeholder{
+       opacity:0;
+     }
+     }
    }
 
   }
@@ -932,6 +955,11 @@ body{
       &::placeholder{
         @include Styles(400, 17px,159%, 0.02em, #1c2752);
         padding: 0 0 0 45px;
+      }
+      &:focus{
+        &::placeholder{
+          opacity:0;
+        }
       }
     }
 
@@ -947,6 +975,11 @@ body{
         @include Styles(400, 17px,159%, 0.02em, #1c2752);
         padding: 0 0 0 45px;
       }
+      &:focus{
+        &::placeholder{
+          opacity:0;
+        }
+      }
     }
 
   }
@@ -960,6 +993,11 @@ body{
       &::placeholder{
         @include Styles(400, 17px,159%, 0.02em, #1c2752);
         padding: 0 0 0 45px;
+      }
+      &:focus{
+        &::placeholder{
+          opacity:0;
+        }
       }
     }
 
@@ -979,12 +1017,267 @@ body{
   height: 68px;
   background: #ffb342;
   @include Styles(700, 17px,159%, 0.02em, #1c2752);
+  &:hover{
+    color: white;
+  }
 }
 
 
+.SectionEight{
+  padding: 60px 0 140px 0;
+}
+.SectionEight_MainContainer{
+  max-width: 1200px;
+  margin: auto;
+   .SectionEight_MainContainer_Titles{
+     max-width: 840px;
+     text-align: center;
+     margin: 0 180px 45px 180px;
+
+  .TitleH{
+    @include Styles(400, 18px,150%, 0.02em, #1c2752);
+    text-transform: capitalize;
+    margin: 0 0 22px 0;
+    background: #f4f4f4;
+    display: inline-block;
+    padding: 0 20px;
+
+    &::before{
+      position: relative;
+      top:5px;
+      content: "";
+      width:22px;
+      height:27px;
+      display: inline-block;
+      margin: 0 10px 0 0;
+      background-image: url("../Images/Testimonial.svg");
+    }
+  }
+  .Title2{
+    @include Styles(400,45px,130%, 0.01em, #1c2752);
+    max-width: 536px;
+    margin: 0 152px;
+  }
+   }
+}
+
+.SectionEight_MainContainer-Links{
+  @include AlignmentOfBlock(0,1200px,flex,space-between);
+  a{
+    svg{
+      transition: 1s ease transform 1s;
 
 
+      &:hover{
+       stroke: #1c2752;
+        stroke-width: 3;
+      }
+    }
+  }
+}
 
 
+.SectionNine{
+  background: #f4f4f4;
+  padding: 140px 0 140px 0;
+  .SectionNine-MainContainer{
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+.SectionNine-MainContainer-Upper{
+  padding: 0 0 18px 0;
+  @include AlignmentOfBlock(0,1200px,flex,space-between);
+  .SectionNine-MainContainer-Upper-Left{
+    max-width: 592px;
+    .Left-Item1{
+      @include Styles(400,17px,159%, 0.02em, #1c2752);
+      background: #e4e4e4;
+      margin: 10px 0 23px 0;
+      display: inline-block;
+      padding: 0 20px;
+      &::before{
+        content: "";
+        width: 22px;
+        height: 27px;
+        display: inline-block;
+        background-image: url("../Images/Testimonial.svg");
 
+      }
 
+    }
+  }
+  .Left-Item2{
+    @include Styles(400,45px,130%, 0.01em, #1c2752);
+    max-width: 492px;
+  }
+  .SectionNine-MainContainer-Upper-Right{
+    @include Styles(400,18px,159%, 0.02em, #7e7e7e);
+    margin: 41px 7px 16px 0;
+    max-width: 585px;
+  }
+}
+
+.SectionNine-MainContainer-Middle{
+  margin:40px 0 0 0 !important;
+  gap:30px;
+  @include AlignmentOfBlock(40px 0 0 0,1200px,flex,space-between);
+  article{
+    background: white;
+    max-width: 380px;
+    padding: 40px 50px 40px 50px;
+    .Article-Link{
+      @include Styles(400,20px,150%, 0.02em, #1c2752);
+      padding: 19px 90px;
+      text-decoration: none;
+      background: #ffb342;
+      &:hover{
+        color: white;
+      }
+    }
+    .Article-Element{
+      padding: 0 0 36px 0;
+      border-bottom: 1px solid #d7d7d7;
+      margin: 0 0 29px 0;
+     .Article-Element-Title{
+       @include Styles(400,20px,150%, 0.02em, #1c2752);
+       margin: 0 0 7px 0;
+     }
+      .Article-Element-Span1{
+        display: inline-block;
+        margin: 0 43px 0 0;
+        @include Styles(400,32px,110%, 0.01em, #1c2752);
+      }
+      .Article-Element-Span2{
+        @include Styles(400,15px,160%, 0.02em, #7e7e7e);
+
+      }
+    }
+  }
+}
+
+.SectionNine-MainContainer-Middle-List{
+  max-width: 300px;
+  padding: 0 40px 0 0;
+  margin: 0 0 59px 0;
+  .SectionNine-MainContainer-Middle-List-Item.LastOne{
+    margin: 0;
+  }
+  .SectionNine-MainContainer-Middle-List-Item{
+    list-style: none;
+    @include Styles(400,17px,159%, 0.02em, #7e7e7e);
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    &::before{
+      content: "";
+      width: 19px;
+      height: 19px;
+      display: inline-block;
+      margin: 0 12px 0 0;
+      background-image: url("../Images/True.svg");
+    }
+  }
+}
+
+.SectionNine-MainContainer-Lower{
+  @include AlignmentOfBlock(61px 0 0 0,1200px,flex,stretch);
+  gap:100px;
+  .SectionNine-MainContainer-Lower-Inner1.Menu{
+    max-width: 585px;
+    .Menu-Title{
+      @include Styles(400,20px,140%, 0.02em, #1c2752);
+      margin: 0 0 9px 0;
+      &::before{
+        margin: 0 15px 0 0;
+        position: relative;
+        top:10px;
+        content:"";
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background-image: url("../Images/Truth.svg");
+      }
+    }
+    .Menu-Paragraph{
+      @include Styles(400,17px,159%, 0.02em, #7e7e7e);
+      margin: 0 0 7px 0;
+      max-width: 510px;
+      padding: 0 42px;
+    }
+  }
+
+}
+
+.SectionTen-MainContainer{
+  padding: 140px 0 52px 0;
+  @include AlignmentOfBlock(auto,1400px,flex,space-around);
+  background: #ffb342;
+  .SectionTen-MainContainer-Menu{
+    max-width: 410px;
+    .SectionTen-MainContainer-Menu-Title{
+      @include Styles(400,32px,140%, 0.01em, #1c2752);
+      margin: 0 0 9px 0;
+    }
+    .SectionTen-MainContainer-Menu-Paragraph{
+      @include Styles(400,18px,150%, 0.02em, #1c2752);
+    }
+  }
+}
+.SectionTen-MainContainer-Form{
+  max-width: 570px;
+  display: flex;
+  align-items: start;
+  .SectionTen-MainContainer-Form-Input{
+    width: 389px;
+    height: 68px;
+    background: #ffb342;
+    border: 1px solid #fff;
+    border-right: none;
+    &::placeholder{
+      @include Styles(400,17px,159%, 0.02em, #fff);
+      padding: 0 0 0 25px;
+    }
+    &:focus{
+      &::placeholder{
+        opacity:0;
+      }
+    }
+  }
+  .SubscribeButton{
+    @include Styles(400,17px,159%, 0.02em, #1c2752);
+    background: white;
+    padding: 20px 49px;
+    border: none;
+    transition: 0.8s ease;
+    &:hover{
+      background: rgb(63,94,251);
+      background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,242,1) 100%);
+      color: #1c2752 ;
+      transition: 1s ease;
+    }
+  }
+}
+
+.Footer{
+  padding: 50px 0 0 0;
+  background: #1C2752;
+  .Footer-MainContainer{
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+.Footer-MainContainer-Upper{
+  @include AlignmentOfBlock(0,1200px ,flex,space-between);
+}
+
+.Footer-MainContainer-Upper-Link{
+  display: flex;
+  max-width: 280px;
+  p{
+    margin: 16px 0 0 15px;
+    @include Styles(400,20px,130%, 0.02em, #fff);
+    span{
+      @include Styles(400,17px,159%, 0.02em, #fff);
+    }
+  }
+}
