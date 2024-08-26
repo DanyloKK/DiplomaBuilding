@@ -1,3 +1,4 @@
+@import "Media";
 * {
   padding: 0;
   margin: 0;
@@ -116,7 +117,10 @@ body{
 
 .SectionOne-MainContainer{
   @include AlignmentOfBlock(auto,1440px,flex,stretch);
-  background: url("../Images/BackGroundImage1.png") ;
+  background-image: url("../Images/BackGroundImage1.png") ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   .SectionOne-MainContainer-Menu4{
     margin: 260px 0 220px 120px;
     max-width: 720px;
@@ -470,13 +474,13 @@ body{
     max-width: 720px;
     position: relative;
     img{
-      width: 720px;
+      width: 100%;
     }
     .SectionFive-MainContainer-Menu1-Inner{
       max-width: 560px;
       position: absolute;
-      top:140px;
-      left:80px;
+      top:5%;
+      left:5%;
       background: rgba(28, 39, 82, 0.86);
     }
     .SectionFive-MainContainer-Menu1-Inner-List{
@@ -539,7 +543,7 @@ body{
   background: white;
   .SectionFive-MainContainer-Menu2-Upper{
     max-width: 590px;
-    margin:93px 0 40px 70px;
+    margin:40px 0 40px 50px;
     p:first-of-type{
       margin: 10px 0 23px 0;
       @include Styles(400,18px, 150%, 0.02em,#1c2752);
@@ -569,7 +573,7 @@ body{
 }
 .SectionFive-MainContainer-Menu2-Lower{
   max-width: 502px;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 50px;
   a{
     @include Styles(400, 20px, 140%, 0.02em,#1c2752);
     display: flex;
@@ -1354,4 +1358,11 @@ body{
   top:90%;
   left:70%;
   transform: rotate(90deg);
+}
+
+@media (max-width: 1024px) {
+  .SectionOne-MainContainer .SectionOne-MainContainer-Menu4-item1{
+    font-size: 16px;
+  }
+  
 }

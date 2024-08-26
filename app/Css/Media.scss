@@ -1,0 +1,33 @@
+@import "Variables";
+@import "Mixins";
+.SecondDiv{
+  @include respond-to-desktop{
+    padding: 0 15px;
+  }
+}
+main{
+  @include respond-to-desktop{
+    padding: 0 15px;
+  }
+}
+.SectionFive-MainContainer-Menu2 .SectionFive-MainContainer-Menu2-Upper h2{
+  @include respond-to-desktop{
+    font-size: 40px !important;
+  }
+}
+.SectionFive-MainContainer .SectionFive-MainContainer-Menu1{
+  @include respond-to-desktop{
+    max-width: 660px;
+  }
+}
+.SectionFive-MainContainer-Menu2 .SectionFive-MainContainer-Menu2-Upper{
+  @include respond-to-desktop{
+   margin-top: 60px;
+  }
+}
+
+.SectionOne-MainContainer .SectionOne-MainContainer-Menu4-item1{
+  @include respond-to-tablet{
+
+  }
+}
