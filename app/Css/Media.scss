@@ -10,24 +10,360 @@ main{
     padding: 0 15px;
   }
 }
-.SectionFive-MainContainer-Menu2 .SectionFive-MainContainer-Menu2-Upper h2{
-  @include respond-to-desktop{
-    font-size: 40px !important;
+@media (max-width: 1024px) {
+  header{
+    .SecondDiv{
+      gap:40px;
+      .SecondDiv-link{
+        margin:0 0 0 60px;
+      }
+      .SecondDiv-MainMenu{
+        gap:90px;
+      }
+    }
+
+  }
+  
+}
+@media (max-width: 1024px) {
+  .SectionOne{
+  .SectionOne-MainContainer{
+    .SectionOne-MainContainer-Menu4{
+      margin-top: 220px;
+      .SectionOne-MainContainer-Menu4-item1{
+        font-size: 16px;
+        margin: 0 0 25px 0;
+      }
+      .SectionOne-MainContainer-Menu4-item2{
+        font-size: 52px;
+      }
+    }
+  }
+  }
+  }
+@media (max-width: 1024px){
+  .SectionThree{
+    .SectionThree-MainContainer{
+      .SectionThree-MainContainer-Menu2.ui-tabs{
+        .SectionThree-MainContainer-Menu2-List-Inner{
+          display: flex;
+          .ImageDiv{
+            max-width: 350px;
+            margin-top: 50px;
+          }
+          .SectionThree-MainContainer-Menu2-Inner-List{
+            margin: 40px;
+            .SectionThree-MainContainer-Menu2-Inner-List-item2{
+              max-width: 350px;
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
   }
 }
-.SectionFive-MainContainer .SectionFive-MainContainer-Menu1{
-  @include respond-to-desktop{
-    max-width: 660px;
-  }
-}
-.SectionFive-MainContainer-Menu2 .SectionFive-MainContainer-Menu2-Upper{
-  @include respond-to-desktop{
-   margin-top: 60px;
+@media (max-width: 1024px){
+  .SectionFive{
+    .SectionFive-MainContainer{
+    .SectionFive-MainContainer-Menu1{
+      max-width: 512px;
+      .SectionFive-MainContainer-Menu1-Inner{
+        top:12%;
+        left:8%;
+        max-width: 440px;
+        .SectionFive-MainContainer-Menu1-Inner-List{
+          .SectionFive-MainContainer-Menu1-Inner-List-item1{
+            margin: 50px 60px 25px 60px;
+            padding: 0 50px 0 0;
+          }
+          .SectionFive-MainContainer-Menu1-Inner-List-item2{
+            margin: 50px 60px 25px 60px;
+            padding: 0 20px 0 0;
+          }
+          .SectionFive-MainContainer-Menu1-Inner-List-item3{
+            margin: 50px 60px 25px 60px;
+            padding: 0 20px 0 0;
+          }
+          .SectionFive-MainContainer-Menu1-Inner-List-item4{
+            margin: 50px 60px 50px 60px;
+            padding: 0 20px 0 0;
+          }
+        }
+      }
+    }
+      .SectionFive-MainContainer-Menu2{
+      max-width: 512px;
+        .SectionFive-MainContainer-Menu2-Lower{
+          margin: 0 0 0 20px;
+          a{
+            font-size: 18px;
+            &::before{
+              width: 32px;
+              height: 32px;
+              margin-right:17px;
+            }
+          }
+          p{
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
+        }
+        .SectionFive-MainContainer-Menu2-Upper{
+          max-width: 470px;
+          margin: 40px 0 20px 20px;
+          p:first-of-type{
+            font-size: 16px;
+            margin: 10px 0 15px 0;
+          }
+          h2{
+            font-size: 36px;
+          }
+          p:nth-of-type(2){
+            font-size: 15px;
+          }
+        }
+      }
+    }
   }
 }
 
-.SectionOne-MainContainer .SectionOne-MainContainer-Menu4-item1{
-  @include respond-to-tablet{
+@media (max-width: 1024px) {
+  .SectionSix{
+    .SectionSix-MainContainer{
+      padding: 100px 0 120px 0;
+      .SectionSix-MainContainer-Menu{
+        gap:25px;
+        figure{
+          padding: 21px 21px 19px 21px;
+          h3{
+            font-size: 22px;
+          }
+          figcaption{
+            font-size: 15px;
+          }
+        }
+      }
+      .SectionSix-MainContainer-Menu1{
+        margin: 0 100px 30px 100px;
+        h2{
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 1024px) {
+  .SectionSeven{
+    padding:30px 0 0 0;
+    .SectionSeven-MainContainer{
+      .SectionSeven-MainContainer-Menu{
+        padding-left:25px;
+        .Menu-Item{
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+        h4{
+          font-size: 36px;
+          margin-bottom: 25px;
+        }
+        .SectionSeven-MainContainer-Menu-Inner1{
+         blockquote{
+           font-size: 16px;
+           span{
+             font-size: 16px;
+           }
+         }
+        }
+        .SectionSeven-MainContainer-Menu-Inner{
+          padding: 35px 50px 26px 31px;
+          border: 1px solid #e4e4e4;
+          margin: 0 0 25px 0;
+          .SectionSeven-MainContainer-Menu-Inner-Item{
+            img{
+              margin: 0 10px 0 0;
+            }
+            .SectionSeven-MainContainer-Menu-Inner-Item-Customer{
+              img{
+                margin-right: 5px;
+              }
+              p{
+                margin: 5px 0 0 5px;
+                font-size: 19px;
+                span{
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+  @media (max-width: 1024px) {
+    .SectionSeven-MainContainer-Menu-Inner2{
+      padding: 40px 0 30px 0;
+      .SectionSeven-MainContainer-Menu-Inner2-List{
+        margin: 0 0 0 20px;
+        .Item2_Of_list{
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        .Item3_Of_list{
+          margin-bottom: 20px;
+        }
+        .Menu-Item4{
+          font-size: 16px;
+        }
+      }
+    }
+    }
+
+@media (max-width: 1024px) {
+  .SectionSeven{
+    .SectionSeven-MainContainer{
+      .SectionSeven-MainContainer-Menu1{
+        .SectionSeven-MainContainer-Menu1-Form{
+          padding: 60px 30px 65px 30px;
+          .SectionSeven-MainContainer-Menu1-Form .First_Input-Block{
+
+          }
+        }
+        margin: 0 0 0 35px;
+        .Paragraph{
+          font-size: 16px;
+          margin: 0 0 15px 0;
+        }
+        .Title{
+          font-size: 36px;
+          margin: 0 0 35px 0;
+        }
+      }
+    }
+  }
+  
+}
+
+
+@media (max-width: 1024px){
+  .SectionEight{
+    .SectionEight_MainContainer{
+      .SectionEight_MainContainer-Links{
+        justify-content: space-around;
+      }
+      .SectionEight_MainContainer_Titles{
+        .TitleH{
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+        .Title2{
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .SectionNine{
+    padding: 50px 0 50px 0;
+    .SectionNine-MainContainer{
+      .SectionNine-MainContainer-Lower{
+        padding: 0 15px;
+      }
+      .SectionNine-MainContainer-Middle{
+        margin: 10px 0 0 0!important;
+        padding: 0 15px;
+        article{
+          .Article-Link{
+            font-size: 17px;
+            padding: 16px 50px;
+          }
+          padding: 30px 40px 30px 40px;
+          .SectionNine-MainContainer-Middle-List{
+            padding: 0 30px 0 0;
+            margin: 0 0 45px 0;
+            .SectionNine-MainContainer-Middle-List-Item{
+              font-size: 15px;
+              margin: 0 0 15px 0;
+            }
+          }
+          .Article-Element{
+            padding: 0 0 25px 0;
+            margin: 0 0 18px 0;
+            .Article-Element-Title{
+              font-size: 18px;
+            }
+            .Article-Element-Span1{
+              font-size: 28px;
+              margin: 0 20px 0 0;
+            }
+            .Article-Element-Span2{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .SectionNine-MainContainer-Upper{
+        padding: 0 15px;
+        .SectionNine-MainContainer-Upper-Right{
+          font-size: 16px;
+          margin: 0 7px 16px 0;
+        }
+      .SectionNine-MainContainer-Upper-Left{
+        .Left-Item1{
+          font-size: 17px;
+          margin: 10px 0 16px 0;
+        }
+        .Left-Item2{
+          font-size: 36px;
+        }
+      }
+      }
+    }
+  }
+  
+}
+
+
+
+@media (max-width: 1024px) {
+  .SectionTen{
+    .SectionTen-MainContainer{
+      .SectionTen-MainContainer-Form{
+        .SectionTen-MainContainer-Form-Input{
+          width: 310px;
+          height: 50px;
+        }
+        .SubscribeButton{
+          padding: 11px 32px;
+        }
+      }
+      padding: 70px 0 32px 0;
+      .SectionTen-MainContainer-Menu{
+        .SectionTen-MainContainer-Menu-Title{
+          font-size: 26px;
+        }
+        .SectionTen-MainContainer-Menu-Paragraph{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Footer{
+    .Footer-MainContainer{
+      padding: 0 15px;
+      .Footer-MainContainer-Upper{
+
+      }
+    }
   }
 }
