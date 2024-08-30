@@ -41,6 +41,9 @@ main{
   }
   }
   }
+
+
+
 @media (max-width: 1024px){
   .SectionThree{
     .SectionThree-MainContainer{
@@ -64,7 +67,7 @@ main{
     }
   }
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .SectionFive{
     .SectionFive-MainContainer{
     .SectionFive-MainContainer-Menu1{
@@ -333,8 +336,9 @@ main{
 
 
 @media (max-width: 1024px) {
-  .SectionTen{
+  section.SectionTen{
     .SectionTen-MainContainer{
+      padding: 70px 0 32px 0;
       .SectionTen-MainContainer-Form{
         .SectionTen-MainContainer-Form-Input{
           width: 310px;
@@ -344,7 +348,6 @@ main{
           padding: 11px 32px;
         }
       }
-      padding: 70px 0 32px 0;
       .SectionTen-MainContainer-Menu{
         .SectionTen-MainContainer-Menu-Title{
           font-size: 26px;
@@ -363,6 +366,630 @@ main{
       padding: 0 15px;
       .Footer-MainContainer-Upper{
 
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body{
+
+  .FirstDiv{
+    justify-content: space-around;
+  }
+}
+}
+
+
+@media (max-width: 992px) {
+  header{
+    .SecondDiv{
+      gap:30px;
+
+      .SecondDiv-link{
+        margin:0 0 0 60px;
+      }
+      .SecondDiv-MainMenu{
+        gap:90px;
+        margin: 40px 60px 0 0;
+      }
+      .SecondDiv-menu3{
+        max-width: 840px;
+        .SecondDiv-menu3-list-item-link2{
+          font-size: 18px;
+          padding: 16px 36px;
+        }
+        .SecondDiv-menu3-list{
+          gap: 39px;
+          padding: 29px 0 29px 35px;
+          .SecondDiv-menu3-list-item{
+            .SecondDiv-menu3-list-item-link{
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+@media (max-width: 992px) {
+  .SectionOne{
+    .SectionOne-MainContainer{
+      .SectionOne-MainContainer-Menu4{
+        margin-top: 160px;
+        .SectionOne-MainContainer-Menu4-item1{
+          font-size: 15px;
+          margin: 0 0 21px 0;
+        }
+        .SectionOne-MainContainer-Menu4-item2{
+          font-size: 48px;
+          max-width: 512px;
+        }
+        .SectionOne-MainContainer-Menu4-Link{
+          font-size: 17px;
+          padding: 17px 36px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px){
+  section.SectionTwo{
+    padding: 100px 0 100px 0;
+    .SectionTwo-MainContainer{
+      max-width: 986px;
+      gap:35px;
+      .SectionTwo-MainContainer-Menu2{
+        max-width: 496px;
+        .SectionTwo-MainContainer-Menu2-Paragraph{
+          font-size: 16px;
+          display: inline-block;
+          margin: 18px 0 18px 0;
+          padding-right: 15px;
+          &::before{
+           position: relative;
+            top:5px;
+          }
+        }
+        h2{
+          font-size: 39px;
+        }
+        .SectionTwo-MainContainer-Menu2-Paragraph2{
+          font-size: 16px;
+        }
+        .SectionTwo-MainContainer-Menu2-Paragraph3{
+          font-size: 16px;
+        }
+        .SectionTwo-MainContainer-Menu2-Inner{
+          .SectionTwo-MainContainer-Menu2-Inner-list{
+            li{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px){
+  .SectionThree{
+    .SectionThree-MainContainer{
+      max-width: 986px;
+      .SectionThree-MainContainer-Menu1{
+        margin: 100px 0 40px 0;
+        p{
+          font-size: 16px;
+          padding: 0 20px 0 23px;
+        }
+        h2{
+          font-size: 39px;
+        }
+        p:last-of-type{
+          font-size: 16px;
+        }
+      }
+      .SectionThree-MainContainer-Menu2.ui-tabs{
+        .SectionThree-MainContainer-Menu2-List{
+          max-width: 660px;
+          gap:20px;
+          margin-left: 50px;
+          padding: 0;
+          .ui-state-default{
+            padding: 16px 29px;
+            .ui-tabs-anchor{
+              font-size: 18px;
+              line-height: 150%;
+            }
+          }
+        }
+        .SectionThree-MainContainer-Menu2-List-Inner{
+          display: flex;
+          max-width: 750px;
+          padding-right: 25px;
+          .ImageDiv{
+            max-width: 350px;
+            margin-top: 24px;
+          }
+          .SectionThree-MainContainer-Menu2-Inner-List{
+            margin: 35px 15px 45px 15px;
+            .SectionThree-MainContainer-Menu2-Inner-List-item1{
+              font-size: 15px;
+            }
+            h2{
+              font-size: 39px;
+            }
+            .SectionThree-MainContainer-Menu2-Inner-List-item2{
+              max-width: 330px;
+              font-size: 15px;
+              line-height: 140%;
+            }
+            a{
+              font-size: 17px;
+              padding: 16px 39px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  section.SectionFour{
+    padding: 150px 0 50px 0;
+    .SectionFour-MainContainer{
+      max-width: 986px;
+      .SectionFour-MainContainer-Menu1{
+        max-width: 800px;
+        p{
+          font-size: 16px;
+        }
+        h2{
+          font-size: 39px;
+        }
+        p:last-of-type{
+          font-size: 16px;
+          max-width: 560px;
+        }
+      }
+    }
+    .SectionFour-MainContainer-Menu2{
+      .SectionFour-MainContainer-Menu2-item{
+        h3{
+          font-size: 22px;
+        }
+        p{
+          font-size: 16px;
+        }
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px){
+  .SectionFive{
+    .SectionFive-MainContainer{
+      max-width: 986px;
+      .SectionFive-MainContainer-Menu1{
+        max-width: 493px;
+        .SectionFive-MainContainer-Menu1-Inner{
+          top:12%;
+          left:8%;
+          max-width: 400px;
+          .SectionFive-MainContainer-Menu1-Inner-List{
+            .SectionFive-MainContainer-Menu1-Inner-List-item1{
+              margin: 35px 60px 20px 60px;
+              padding: 0 20px 0 0;
+              font-size: 21px;
+              span{
+                font-size: 22px;
+              }
+            }
+            .SectionFive-MainContainer-Menu1-Inner-List-item2{
+              margin: 35px 60px 20px 60px;
+              padding: 0 20px 0 0;
+              font-size: 21px;
+              span{
+                font-size: 22px;
+              }
+            }
+            .SectionFive-MainContainer-Menu1-Inner-List-item3{
+              margin: 35px 60px 20px 60px;
+              padding: 0 10px 0 0;
+              font-size: 21px;
+              span{
+                font-size: 22px;
+              }
+            }
+            .SectionFive-MainContainer-Menu1-Inner-List-item4{
+              margin: 35px 60px 50px 60px;
+              padding: 0 5px 0 0;
+              font-size: 21px;
+              span{
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+      .SectionFive-MainContainer-Menu2{
+        max-width: 493px;
+        .SectionFive-MainContainer-Menu2-Lower{
+          margin: 0 0 0 20px;
+          a{
+            font-size: 18px;
+            &::before{
+              width: 32px;
+              height: 32px;
+              margin-right:17px;
+            }
+          }
+          p{
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
+        }
+        .SectionFive-MainContainer-Menu2-Upper{
+          max-width: 470px;
+          margin: 15px 0 20px 20px;
+          p:first-of-type{
+            font-size: 16px;
+            margin: 10px 0 15px 0;
+          }
+          h2{
+            font-size: 36px;
+          }
+          p:nth-of-type(2){
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .SectionSix{
+    .SectionSix-MainContainer{
+      padding: 100px 0 120px 0;
+      .SectionSix-MainContainer-Menu{
+        gap:25px;
+        figure{
+          padding: 21px 21px 19px 21px;
+          h3{
+            font-size: 22px;
+          }
+          figcaption{
+            font-size: 15px;
+          }
+        }
+      }
+      .SectionSix-MainContainer-Menu1{
+        margin: 0 100px 30px 100px;
+        h2{
+          font-size: 36px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  section.SectionSeven {
+    padding: 30px 0 0 0;
+
+    .SectionSeven-MainContainer {
+      max-width: 986px;
+
+      .SectionSeven-MainContainer-Menu {
+
+        max-width: 380px;
+        padding-left: 25px;
+
+        .Menu-Item {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+
+        h4 {
+          font-size: 36px;
+          margin-bottom: 25px;
+        }
+
+        .SectionSeven-MainContainer-Menu-Inner1 {
+          blockquote {
+            font-size: 16px;
+
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .SectionSeven-MainContainer-Menu-Inner {
+          padding: 35px 50px 26px 31px;
+          border: 1px solid #e4e4e4;
+          margin: 0 0 25px 0;
+
+          .SectionSeven-MainContainer-Menu-Inner-Item {
+            img {
+              margin: 0 10px 0 0;
+            }
+
+            .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
+              img {
+                margin-right: 5px;
+              }
+
+              p {
+                margin: 5px 0 0 5px;
+                font-size: 19px;
+
+                span {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    section.SectionSeven{
+      .SectionSeven-MainContainer{
+        .SectionSeven-MainContainer-Menu{
+
+    .SectionSeven-MainContainer-Menu-Inner2 {
+      padding: 40px 0 30px 0;
+      .SectionSeven-MainContainer-Menu-Inner2-List2{
+        max-width: 420px;
+        span{
+          font-size: 26px;
+          margin:0 0 0 20px;
+        }
+      }
+
+      .SectionSeven-MainContainer-Menu-Inner2-List {
+        margin: 0 0 0 20px;
+
+        .Item2_Of_list {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .Item3_Of_list {
+          margin-bottom: 20px;
+        }
+
+        .Menu-Item4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .SectionSeven {
+      .SectionSeven-MainContainer {
+        .SectionSeven-MainContainer-Menu1 {
+          .SectionSeven-MainContainer-Menu1-Form {
+            padding: 60px 30px 65px 30px;
+
+            .SectionSeven-MainContainer-Menu1-Form .First_Input-Block {
+
+            }
+          }
+
+          margin: 0 0 0 35px;
+
+          .Paragraph {
+            font-size: 16px;
+            margin: 0 0 15px 0;
+          }
+
+          .Title {
+            font-size: 36px;
+            margin: 0 0 35px 0;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  @media (max-width: 992px) {
+    .SectionEight {
+      .SectionEight_MainContainer {
+        max-width: 986px;
+
+        .SectionEight_MainContainer-Links {
+          justify-content: space-around;
+        }
+
+        .SectionEight_MainContainer_Titles {
+          .TitleH {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+
+          .Title2 {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    section.SectionNine {
+      padding: 50px 0 50px 0;
+
+      .SectionNine-MainContainer {
+        max-width: 986px;
+        .SectionNine-MainContainer-Lower {
+          padding: 0 15px;
+          max-width: 986px;
+        }
+
+        .SectionNine-MainContainer-Middle {
+          margin: 10px 0 0 0 ;
+          padding: 0 15px;
+          max-width: 986px;
+
+          article {
+            .Article-Link {
+              font-size: 15px;
+              padding: 15px 47px;
+            }
+
+            padding: 30px 40px 30px 40px;
+
+            .SectionNine-MainContainer-Middle-List {
+              padding: 0 30px 0 0;
+              margin: 0 0 45px 0;
+
+              .SectionNine-MainContainer-Middle-List-Item {
+                font-size: 13px;
+                margin: 0 0 15px 0;
+              }
+            }
+
+            .Article-Element {
+              padding: 0 0 25px 0;
+              margin: 0 0 18px 0;
+
+              .Article-Element-Title {
+                font-size: 18px;
+              }
+
+              .Article-Element-Span1 {
+                font-size: 23px;
+                margin: 0 15px 0 0;
+              }
+
+              .Article-Element-Span2 {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+
+        .SectionNine-MainContainer-Upper {
+          padding: 0 15px;
+          max-width: 986px;
+
+          .SectionNine-MainContainer-Upper-Right {
+            font-size: 16px;
+            margin: 0 7px 16px 0;
+          }
+
+          .SectionNine-MainContainer-Upper-Left {
+            .Left-Item1 {
+              font-size: 17px;
+              margin: 10px 0 16px 0;
+            }
+
+            .Left-Item2 {
+              font-size: 36px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+  @media (max-width: 992px) {
+    section.SectionTen {
+      .SectionTen-MainContainer {
+        max-width: 986px;
+        padding: 35px 0 25px 0;
+        .SectionTen-MainContainer-Form {
+          .SectionTen-MainContainer-Form-Input {
+            width: 310px;
+            height: 50px;
+          }
+
+          .SubscribeButton {
+            padding: 11px 32px;
+          }
+        }
+
+        .SectionTen-MainContainer-Menu {
+          .SectionTen-MainContainer-Menu-Title {
+            font-size: 26px;
+          }
+
+          .SectionTen-MainContainer-Menu-Paragraph {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    footer.Footer {
+      .Footer-MainContainer {
+        padding: 0 15px;
+        max-width: 986px;
+        .Line2{
+          left:65%;
+        }
+
+        .Footer-MainContainer-Upper {
+          .Footer-MainContainer-Upper-Link{
+            a{
+              img{
+                width: 50px;
+                height: 50px;
+              }
+            }
+            p{
+           font-size: 18px;
+              margin: 3px 0 0 15px;
+            }
+          }
+          .Footer-MainContainer-Upper-Link1{
+            max-width: 230px;
+            img{
+              width: 100%;
+            }
+
+          }
+        }
+      }
+      .Footer-MainContainer-Lower{
+        max-width: 986px;
+        .LastButOne{
+          margin-right: 50px;
+
+        }
+        .Footer-MainContainer-Lower-Left{
+          max-width: 360px;
+          p{
+            font-size: 16px;
+          }
+        }
       }
     }
   }
