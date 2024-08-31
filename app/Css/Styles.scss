@@ -204,8 +204,12 @@ body{
        display: flex;
        gap:40px;
        max-width: 575px;
+       img{
+         width: 100%;
+       }
      }
      .SectionTwo-MainContainer-Menu2-Inner-list{
+
        li{
          @include Styles(400,17px,159%,0.02em,#7e7e7e);
          list-style: none;
