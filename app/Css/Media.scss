@@ -1746,10 +1746,11 @@ main{
 @media (max-width: 431px) {
   header{
     .SecondDiv{
+      padding: 0;
       width: 100%;
       max-width: 430px;
       gap:5px;
-      justify-content: space-around;
+      justify-content: space-between;
 
       .SecondDiv-link{
         margin:0 0 0 10px;
@@ -1761,7 +1762,7 @@ main{
       }
       .SecondDiv-MainMenu{
         gap:5px;
-        margin: 0;
+        margin: 0 15px 0 0;
         .SecondDiv-menu{
           .SecondDiv-menu2{
             display: none;
@@ -1785,6 +1786,7 @@ main{
       }
       .SecondDiv-menu3{
         max-width: 650px;
+        display: none;
         .SecondDiv-menu3-list-item-link2{
           font-size: 16px;
           padding: 14px 32px;
@@ -2473,5 +2475,12 @@ main{
         }
       }
     }
+  }
+}
+
+
+@media (min-width: 432px) {
+  .Mobile_MenuBack{
+    display: none;
   }
 }
