@@ -1807,24 +1807,32 @@ main{
   }
 
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .SectionOne{
     .SectionOne-MainContainer{
       .SectionOne-MainContainer-Menu4{
-        margin-top: 160px;
-        margin-left: 60px;
+        margin-top: 100px;
+        margin-left: 40px;
         .SectionOne-MainContainer-Menu4-item1{
-          font-size: 14px;
-          margin: 0 0 21px 0;
+          font-size: 12px;
+          margin: 0 0 12px 0;
           line-height: 180%;
+          max-width:320px ;
+          &::before{
+            position: relative;
+            top:5px;
+            right: 5px;
+            width: 30px;
+            height: 30px;
+          }
         }
         .SectionOne-MainContainer-Menu4-item2{
-          font-size: 44px;
-          max-width: 512px;
+          font-size: 36px;
+          max-width: 342px;
         }
         .SectionOne-MainContainer-Menu4-Link{
-          font-size: 16px;
-          padding: 16px 32px;
+          font-size: 14px;
+          padding: 14px 28px;
         }
       }
     }
@@ -1832,13 +1840,16 @@ main{
 }
 
 
-@media (max-width: 430px){
+@media (max-width: 431px){
   section.SectionTwo{
     padding: 50px 0 100px 0;
     .SectionTwo-MainContainer{
-      max-width: 986px;
+      max-width: 430px;
       gap:35px;
-
+      flex-wrap: wrap;
+      .SectionTwo-MainContainer-Menu1{
+        height: 300px;
+      }
       .SectionTwo-MainContainer-Menu2{
         max-width: 370px;
         order: 2;
@@ -1853,13 +1864,13 @@ main{
           }
         }
         h2{
-          font-size: 36px;
+          font-size: 34px;
         }
         .SectionTwo-MainContainer-Menu2-Paragraph2{
-          font-size: 15px;
+          font-size: 14px;
         }
         .SectionTwo-MainContainer-Menu2-Paragraph3{
-          font-size: 15px;
+          font-size: 14px;
           margin: 15px 0 30px 0;
         }
         .SectionTwo-MainContainer-Menu2-Inner{
@@ -1867,14 +1878,14 @@ main{
           img{
             width: 80%;
             height: 100%;
-            padding-top: 20px;
+            padding-top: 0;
           }
           .SectionTwo-MainContainer-Menu2-Inner-list{
             li:first-of-type{
               margin: 5px 0 5px 0;
             }
             li{
-              font-size: 14px;
+              font-size: 12px;
             }
           }
         }
@@ -1884,42 +1895,43 @@ main{
 }
 
 
-@media (max-width: 430px){
+@media (max-width: 431px){
   .SectionThree{
     .SectionThree-MainContainer{
-      max-width: 986px;
+      max-width: 400px;
       .SectionThree-MainContainer-Menu1{
-        max-width: 600px;
+        max-width: 320px;
         margin: 100px 0 40px 0;
         p:first-of-type{
-          font-size: 15px;
-          line-height: 180%;
+          font-size: 14px;
+          line-height: 190%;
           padding: 0 20px 0 23px;
         }
         h2{
-          font-size: 36px;
+          font-size: 34px;
         }
         p:last-of-type{
-          font-size: 15px;
+          font-size: 14px;
         }
       }
       .SectionThree-MainContainer-Menu2.ui-tabs{
         .SectionThree-MainContainer-Menu2-List{
-          max-width: 600px;
-          gap:15px;
+          max-width: 320px;
+          gap:5px;
           margin-left: 30px;
           padding: 0;
           .ui-state-default{
-            padding: 13px 22px;
+            padding: 4px 8px;
             .ui-tabs-anchor{
-              font-size: 16px;
+              font-size: 0;
               line-height: 150%;
             }
           }
         }
         .SectionThree-MainContainer-Menu2-List-Inner{
           display: flex;
-          max-width: 600px;
+          flex-wrap: wrap;
+          max-width: 320px;
           padding-right: 25px;
           .ImageDiv{
             max-width: 270px;
@@ -1932,7 +1944,7 @@ main{
           .SectionThree-MainContainer-Menu2-Inner-List{
             margin: 25px 15px 45px 15px;
             .SectionThree-MainContainer-Menu2-Inner-List-item1{
-              font-size: 14px;
+              font-size: 12px;
               line-height:220%;
               &::before{
                 content: "";
@@ -1946,16 +1958,16 @@ main{
               }
             }
             h2{
-              font-size: 36px;
+              font-size: 34px;
             }
             .SectionThree-MainContainer-Menu2-Inner-List-item2{
               max-width: 330px;
-              font-size: 14px;
+              font-size: 12px;
               line-height: 140%;
             }
             a{
-              font-size: 15px;
-              padding: 13px 36px;
+              font-size: 14px;
+              padding: 8px 28px;
             }
           }
         }
@@ -1963,93 +1975,97 @@ main{
     }
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   section.SectionFour{
     padding: 150px 0 50px 0;
     .SectionFour-MainContainer{
-      max-width: 738px;
+      max-width: 320px;
       .SectionFour-MainContainer-Menu1{
-        max-width: 554px;
+        max-width: 320px;
         p:first-of-type{
-          font-size: 16px;
+          font-size: 14px;
         }
         h2{
-          font-size: 36px;
+          font-size: 34px;
         }
         p:last-of-type{
           font-size: 14px;
-          max-width: 501px;
+          max-width: 320px;
         }
       }
     }
     .SectionFour-MainContainer-Menu2{
-      max-width: 738px;
+      max-width: 320px;
       .SectionFour-MainContainer-Menu2-item{
         padding-bottom: 25px;
-        width: calc(48% - 3px);
+        width: calc(98% - 3px);
         img{
           margin: 30px 0 15px 25px;
         }
         h3{
-          font-size: 20px;
+          font-size: 18px;
           margin: 0 0 15px 30px;
         }
         p{
-          font-size: 14px;
+          font-size: 12px;
           margin: 0 0 22px 30px;
         }
         a{
-          font-size: 14px;
+          font-size: 12px;
           margin: 0 0 22px 30px;
         }
       }
     }
   }
 }
-@media (max-width: 430px){
+@media (max-width: 431px){
   .SectionFive{
     padding-bottom: 25px;
     .SectionFive-MainContainer{
-      max-width: 738px;
+      max-width: 320px;
       flex-wrap:wrap;
       justify-content: center;
       .SectionFive-MainContainer-Menu1{
-        max-width: 738px;
+        max-width: 320px;
         .SectionFive-MainContainer-Menu1-Inner{
-          top:18%;
-          left:20%;
-          max-width: 400px;
+          top:15%;
+          left:8%;
+          max-width: 320px;
           .SectionFive-MainContainer-Menu1-Inner-List{
             .SectionFive-MainContainer-Menu1-Inner-List-item1{
-              margin: 35px 60px 20px 60px;
-              padding: 0 20px 0 0;
-              font-size: 21px;
+              margin: 15px 20px 15px 20px;
+              padding: 0 10px 0 0;
+              font-size: 18px;
               span{
-                font-size: 22px;
+                font-size: 20px;
+                padding: 8px 21px 8px 14px;
               }
             }
             .SectionFive-MainContainer-Menu1-Inner-List-item2{
-              margin: 35px 60px 20px 60px;
-              padding: 0 20px 0 0;
-              font-size: 21px;
+              margin: 15px 20px 15px 20px;
+              padding: 0 10px 0 0;
+              font-size: 18px;
               span{
-                font-size: 22px;
+                font-size: 19px;
+                padding: 8px 21px 8px 14px;
               }
             }
             .SectionFive-MainContainer-Menu1-Inner-List-item3{
-              margin: 35px 60px 20px 60px;
+              margin: 15px 20px 15px 20px;
               padding: 0 10px 0 0;
-              font-size: 21px;
+              font-size: 18px;
               span{
-                font-size: 22px;
+                font-size: 19px;
+                padding: 8px 21px 8px 14px;
               }
             }
             .SectionFive-MainContainer-Menu1-Inner-List-item4{
-              margin: 35px 60px 50px 60px;
+              margin: 15px 20px 15px 20px;
               padding: 0 5px 0 0;
-              font-size: 21px;
+              font-size: 18px;
               span{
-                font-size: 22px;
+                font-size: 19px;
+                padding: 8px 21px 8px 14px;
               }
             }
           }
