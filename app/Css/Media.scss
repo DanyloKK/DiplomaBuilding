@@ -2072,11 +2072,11 @@ main{
         }
       }
       .SectionFive-MainContainer-Menu2{
-        max-width: 720px;
+        max-width: 320px;
         .SectionFive-MainContainer-Menu2-Lower{
           margin: 0 0 0 20px;
           a{
-            font-size: 16px;
+            font-size: 14px;
             &::before{
               width: 32px;
               height: 32px;
@@ -2084,22 +2084,22 @@ main{
             }
           }
           p{
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 20px;
           }
         }
         .SectionFive-MainContainer-Menu2-Upper{
-          max-width: 470px;
+          max-width: 320px;
           margin: 15px 0 20px 20px;
           p:first-of-type{
-            font-size: 14px;
+            font-size: 12px;
             margin: 10px 0 15px 0;
           }
           h2{
-            font-size: 35px;
+            font-size: 34px;
           }
           p:nth-of-type(2){
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -2107,53 +2107,58 @@ main{
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .SectionSix{
     .SectionSix-MainContainer{
       padding: 100px 0 120px 0;
-      max-width: 738px;
+      max-width: 320px;
       .SectionSix-MainContainer-Menu{
         gap:25px;
         flex-wrap: wrap;
         figure{
           padding: 21px 21px 19px 21px;
-          width: calc(47% - 3px);
+          width: calc(97% - 3px);
           h3{
-            font-size: 20px;
+            font-size: 18px;
           }
           figcaption{
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
       .SectionSix-MainContainer-Menu1{
-        margin: 0 100px 30px 100px;
-        max-width: 538px;
+        margin: 0 60px 30px 60px;
+        max-width: 320px;
         h2{
-          font-size: 35px;
+          font-size: 34px;
         }
         p{
-          font-size: 14px;
-          line-height: 190%;
+          font-size: 12px;
+          line-height: 220%;
+          max-width: 320px;
+          &::before{
+            margin: 0;
+          }
         }
       }
     }
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   section.SectionSeven {
     padding: 30px 0 0 0;
 
     .SectionSeven-MainContainer {
-      max-width: 738px;
+      max-width: 320px;
       flex-wrap: wrap;
       justify-content: center;
 
       .SectionSeven-MainContainer-Menu {
 
-        max-width: 380px;
-        padding-left: 25px;
+        max-width: 320px;
+        padding-left: 5px;
+        padding-right: 5px;
 
         .Menu-Item {
           font-size: 16px;
@@ -2192,10 +2197,10 @@ main{
 
               p {
                 margin: 5px 0 0 5px;
-                font-size: 19px;
+                font-size: 17px;
 
                 span {
-                  font-size: 16px;
+                  font-size: 14px;
                 }
               }
             }
@@ -2206,27 +2211,27 @@ main{
   }
 
 
-  @media (max-width: 430px) {
+  @media (max-width: 431px) {
     section.SectionSeven{
       .SectionSeven-MainContainer{
         .SectionSeven-MainContainer-Menu{
           text-align: center;
 
           .SectionSeven-MainContainer-Menu-Inner2 {
-            padding: 40px 0 30px 0;
+            padding: 40px 0 40px 0;
             .SectionSeven-MainContainer-Menu-Inner2-List2{
               max-width: 420px;
               span{
-                font-size: 26px;
-                margin:0 0 0 20px;
+                font-size: 21px;
+                margin:0 0 0 10px;
               }
             }
 
             .SectionSeven-MainContainer-Menu-Inner2-List {
-              margin: 0 0 0 20px;
+              margin: 0 0 0 10px;
 
               .Item2_Of_list {
-                font-size: 16px;
+                font-size: 14px;
                 margin-bottom: 10px;
               }
 
@@ -2235,7 +2240,7 @@ main{
               }
 
               .Menu-Item4 {
-                font-size: 16px;
+                font-size: 14px;
               }
             }
           }
@@ -2244,23 +2249,50 @@ main{
     }
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 431px) {
     .SectionSeven {
       .SectionSeven-MainContainer {
         .SectionSeven-MainContainer-Menu1 {
-          margin-top: 50px;
           text-align: center;
+          max-width: 320px;
+          margin: 50px 0 0 1px;
           .SectionSeven-MainContainer-Menu1-Form {
-            padding: 60px 30px 65px 30px;
-
-            .SectionSeven-MainContainer-Menu1-Form .First_Input-Block {
+            padding: 20px 5px 25px 5px;
+            .ServiceDescription{
+              width: 370px;
+              height: 160px;
+            }
+              .First_Input-Block{
+                .First_Input{
+                  width: 370px;
+                  height: 60px;
+                }
+              }
+            .Fourth_Input-Block{
+              .Fourth_Input{
+                width: 370px;
+                height: 60px;
+              }
+            }
+            .Second_Input-Block{
+              .Second_Input{
+                width: 370px;
+                height: 60px;
+              }
+            }
+            .Third_Input-Block{
+              .Third_Input{
+                width: 370px;
+                height: 60px;
+              }
+            }
 
             }
-          }
+
 
 
           .Paragraph {
-            font-size: 15px;
+            font-size: 14px;
             margin: 0 0 15px 0;
           }
 
@@ -2269,7 +2301,9 @@ main{
             margin: 0 0 35px 45px;
           }
           .SubmitButton{
-            font-size: 15px;
+            font-size: 14px;
+            width: 370px;
+            height: 60px;
           }
         }
       }
@@ -2278,24 +2312,36 @@ main{
   }
 
 
-  @media (max-width: 430px) {
+  @media (max-width: 431px) {
     .SectionEight {
       .SectionEight_MainContainer {
-        max-width: 986px;
+        max-width: 370px;
+        .SectionEight_MainContainer_Titles{
+          margin: 0;
+        }
 
         .SectionEight_MainContainer-Links {
           justify-content: space-between;
+          flex-wrap: wrap;
+          column-gap: 25px;
+          margin: 35px 0 0 0;
+          a{
+            width: calc(47% - 3px);
+            svg{
+              width: 150px;
+            }
+          }
         }
 
         .SectionEight_MainContainer_Titles {
           .TitleH {
-            max-width: 382px;
-            font-size: 16px;
+            max-width: 320px;
+            font-size: 14px;
             margin-bottom: 15px;
           }
 
           .Title2 {
-            font-size: 36px;
+            font-size: 34px;
             margin: 0 ;
           }
         }
@@ -2303,28 +2349,29 @@ main{
     }
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 431px) {
     section.SectionNine {
       padding: 20px 0 50px 0;
 
       .SectionNine-MainContainer {
-        max-width: 738px;
+        max-width: 320px;
         .SectionNine-MainContainer-Lower {
           padding: 0 15px;
-          max-width: 738px;
+          max-width: 320px;
           gap:25px;
+          flex-wrap: wrap;
         }
 
         .SectionNine-MainContainer-Middle {
           margin: 10px 0 0 0 ;
           padding: 0 15px;
-          max-width: 738px;
+          max-width: 320px;
           flex-wrap: wrap;
 
           article {
-            width: calc(47% - 3px);
+            width: calc(97% - 3px);
             .Article-Link {
-              font-size: 15px;
+              font-size: 14px;
               padding: 15px 47px;
             }
 
@@ -2335,7 +2382,7 @@ main{
               margin: 0 0 45px 0;
 
               .SectionNine-MainContainer-Middle-List-Item {
-                font-size: 13px;
+                font-size: 12px;
                 margin: 0 0 15px 0;
               }
             }
@@ -2345,16 +2392,16 @@ main{
               margin: 0 0 18px 0;
 
               .Article-Element-Title {
-                font-size: 18px;
+                font-size: 16px;
               }
 
               .Article-Element-Span1 {
-                font-size: 23px;
+                font-size: 20px;
                 margin: 0 15px 0 0;
               }
 
               .Article-Element-Span2 {
-                font-size: 13px;
+                font-size: 12px;
               }
             }
           }
@@ -2363,17 +2410,19 @@ main{
         .SectionNine-MainContainer-Upper {
           padding: 0 15px;
           margin-bottom: 25px;
-          max-width: 738px;
+          max-width: 320px;
+          flex-wrap: wrap;
+          text-align: center;
 
           .SectionNine-MainContainer-Upper-Right {
-            font-size: 14px;
+            font-size: 12px;
             margin: 0 7px 16px 0;
           }
 
           .SectionNine-MainContainer-Upper-Left {
             max-width: 340px;
             .Left-Item1 {
-              font-size: 15px;
+              font-size: 12px;
               margin: 10px 0 16px 0;
               line-height: 190%;
               &::before{
@@ -2389,7 +2438,8 @@ main{
             }
 
             .Left-Item2 {
-              font-size: 34px;
+              font-size: 32px;
+              margin-bottom: 25px;
             }
           }
         }
@@ -2399,43 +2449,44 @@ main{
   }
 
 
-  @media (max-width: 430px) {
+  @media (max-width: 431px) {
     section.SectionTen {
       .SectionTen-MainContainer {
-        max-width: 738px;
+        max-width: 400px;
         padding: 35px 0 25px 0;
         flex-wrap: wrap;
         .SectionTen-MainContainer-Form {
           .SectionTen-MainContainer-Form-Input {
-            width: 310px;
-            height: 50px;
+            width: 260px;
+            height: 40px;
           }
 
           .SubscribeButton {
-            padding: 11px 32px;
+            padding: 8px 26px;
           }
         }
 
         .SectionTen-MainContainer-Menu {
           margin-bottom: 35px;
+          text-align: center;
           .SectionTen-MainContainer-Menu-Title {
-            font-size: 26px;
+            font-size: 22px;
             margin-left: 35px;
           }
 
           .SectionTen-MainContainer-Menu-Paragraph {
-            font-size: 16px;
+            font-size: 12px;
           }
         }
       }
     }
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 431px) {
     footer.Footer {
       .Footer-MainContainer {
         padding: 0 15px;
-        max-width: 738px;
+        max-width: 400px;
         .Line2{
           left:65%;
         }
@@ -2443,8 +2494,18 @@ main{
         .Footer-MainContainer-Upper {
           flex-wrap: wrap;
           justify-content: space-around;
+
+          .Linka{
+            width: calc(47% - 3px);
+            p{
+              font-size: 14px;
+              span{
+                font-size: 12px;
+              }
+            }
+          }
           .Footer-MainContainer-Upper-Link:last-of-type{
-            margin: 15px 15px 0 0;
+            margin: 15px 5px 0 0;
           }
           .Footer-MainContainer-Upper-Link:nth-of-type(2){
             margin: 15px 0 0 10px;
@@ -2458,13 +2519,17 @@ main{
                 height: 50px;
               }
             }
+          }
             p{
-              font-size: 18px;
+              font-size: 16px;
               margin: 3px 0 0 15px;
             }
           }
           .Footer-MainContainer-Upper-Link1{
             max-width: 230px;
+            margin: 10px 0 0 0;
+
+            }
             img{
               width: 100%;
             }
@@ -2473,26 +2538,27 @@ main{
         }
       }
       .Footer-MainContainer-Lower{
-        max-width: 738px;
-        gap:15px;
+        max-width: 400px;
+        gap:1px;
+        flex-wrap: wrap;
+        .Footer-MainContainer-Lower-List1.Ulka{
+          margin-left: 25px;
+        }
+        .Footer-MainContainer-Lower-List3.Ulka.Last-List{
+          margin-left: 25px;
+        }
+        .Footer-MainContainer-Lower-List2.Ulka.LastButOne{
+          margin-right: 25px;
+        }
+
         .Ulka{
           margin: 15px 0 0 0;
-        }
-        .LastButOne{
-          margin-right: 50px;
-
-        }
-        .Footer-MainContainer-Lower-Left{
-          max-width: 320px;
-          margin: 50px 0 0 0;
-          p{
-            font-size: 16px;
-          }
+          width: calc(40% - 3px);
         }
       }
     }
-  }
-}
+
+
 
 
 @media (min-width: 432px) {
