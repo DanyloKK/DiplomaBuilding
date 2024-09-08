@@ -1,24 +1,39 @@
 @import "Variables";
 @import "Mixins";
+@import "Mobile_Menu";
 .SecondDiv{
   @include respond-to-desktop{
-    padding: 0 15px;
+    padding: 0 15px ;
   }
 }
 main{
   @include respond-to-desktop{
-    padding: 0 15px;
+    padding: 0 15px  ;
+  }
+}
+
+
+@media (max-width: 1210px) {
+  header{
+    .SecondDiv{
+      .SecondDiv-menu3{
+        max-width: 1070px;
+      }
+    }
   }
 }
 @media (max-width: 1024px) {
   header{
     .SecondDiv{
+      .SecondDiv-menu3{
+        max-width: 870px;
+      }
       gap:40px;
       .SecondDiv-link{
         margin:0 0 0 60px;
       }
       .SecondDiv-MainMenu{
-        gap:90px;
+        gap:50px;
       }
     }
 
@@ -387,11 +402,11 @@ main{
       gap:30px;
 
       .SecondDiv-link{
-        margin:0 0 0 60px;
+        margin:0 0 0 20px;
       }
       .SecondDiv-MainMenu{
-        gap:90px;
-        margin: 40px 60px 0 0;
+        gap:20px;
+        margin: 40px 25px 0 0;
       }
       .SecondDiv-menu3{
         max-width: 840px;
@@ -496,7 +511,7 @@ main{
         }
       }
       .SectionThree-MainContainer-Menu2.ui-tabs{
-        .SectionThree-MainContainer-Menu2-List{
+        section.SectionThree-MainContainer-Menu2-List{
           max-width: 660px;
           gap:20px;
           margin-left: 50px;
@@ -657,7 +672,7 @@ main{
 }
 
 @media (max-width: 992px) {
-  .SectionSix{
+  section.SectionSix{
     .SectionSix-MainContainer{
       padding: 100px 0 120px 0;
       .SectionSix-MainContainer-Menu{
@@ -995,9 +1010,283 @@ main{
   }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 893px) {
   header{
     .SecondDiv{
+      max-width: 840px;
+    }
+  }
+  section.SectionOne{
+    .SectionOne-MainContainer{
+      max-width: 858px;
+    }
+  }
+
+
+
+  section.SectionFour{
+    section.SectionFour-MainContainer{
+      .SectionFour-MainContainer-Menu2{
+        max-width: 860px;
+        article{
+          width: calc(47% - 3px);
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 840px) {
+  section.SectionThree{
+    .SectionThree-MainContainer{
+      max-width: 800px;
+      .SectionThree-MainContainer-Menu2.ui-tabs{
+        .SectionThree-MainContainer-Menu2-List-Inner{
+          max-width: 630px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 835px) {
+  body .FirstDiv{
+    max-width: 780px;
+  }
+  header .SecondDiv{
+    max-width: 780px;
+    justify-content: center;
+    .SecondDiv-MainMenu{
+      max-width: 457px;
+    }
+    .SecondDiv-menu3{
+      max-width: 740px;
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  section.SectionOne{
+    .SectionOne-MainContainer{
+      max-width: 780px;
+    .SectionOne-MainContainer-Menu4{
+        max-width: 512px;
+      .SectionOne-MainContainer-Menu4-item1{
+        max-width: 512px;
+      }
+      .SectionOne-MainContainer-Menu4-item2{
+        max-width: 512px;
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  section.SectionTwo{
+    .SectionTwo-MainContainer{
+      max-width: 780px;
+      .SectionTwo-MainContainer-Menu1{
+        max-width: 400px;
+      }
+      .SectionTwo-MainContainer-Menu2{
+        max-width: 457px;
+        h2{
+          max-width: 452px;
+        }
+        .SectionTwo-MainContainer-Menu2-Paragraph2{
+          max-width: 450px;
+        }
+        .SectionTwo-MainContainer-Menu2-Paragraph3{
+          max-width: 450px;
+        }
+
+        .SectionTwo-MainContainer-Menu2-Inner{
+          max-width: 451px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 835px){
+  section.SectionThree{
+    .SectionThree-MainContainer{
+      max-width: 780px;
+      .SectionThree-MainContainer-Menu1{
+        max-width: 685px;
+      }
+      h2{
+        max-width: 438px;
+      }
+      p{
+        max-width: 686px;
+      }
+    }
+    .SectionThree-MainContainer-Menu2.ui-tabs{
+      max-width: 750px;
+      .SectionThree-MainContainer-Menu2-List-Inner{
+        max-width: 630px;
+      }
+      .SectionThree-MainContainer-Menu2-List{
+        max-width: 610px;
+        margin-left: 45px;
+        .ui-state-default{
+          padding: 6px 20px;
+          .ui-tabs-anchor{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  section.SectionFour{
+    .SectionFour-MainContainer{
+      max-width: 780px;
+      .SectionFour-MainContainer-Menu1{
+        max-width: 545px;
+      }
+.SectionFour-MainContainer-Menu2{
+  max-width: 780px;
+  .SectionFour-MainContainer-Menu2-item{
+    width: calc(47% - 3px);
+    max-width: 363px;
+  }
+}
+    }
+  }
+}
+
+
+@media (max-width: 835px) {
+  section.SectionFive{
+    .SectionFive-MainContainer{
+      max-width: 780px;
+      .SectionFive-MainContainer-Menu1{
+        max-width: 464px;
+        .SectionFive-MainContainer-Menu1-Inner{
+          max-width: 400px;
+        }
+      }
+      .SectionFive-MainContainer-Menu2{
+        max-width: 325px;
+      }
+
+    }
+  }
+  
+}
+
+@media (max-width: 835px) {
+  section.SectionSix{
+    .SectionSix-MainContainer{
+      max-width: 780px;
+      .SectionSix-MainContainer-Menu1{
+        max-width: 595px;
+      }
+      .SectionSix-MainContainer-Menu{
+        max-width: 755px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 835px) {
+  section.SectionSeven{
+    .SectionSeven-MainContainer{
+      max-width: 780px;
+      .SectionSeven-MainContainer-Menu1{
+        max-width: 480px;
+        .SectionSeven-MainContainer-Menu1-Form{
+          max-width: 450px;
+          .Second_Input-Block{
+            max-width: 350px;
+          }
+          .First_Input-Block{
+            max-width: 350px;
+          }
+          .Third_Input-Block{
+            max-width: 350px;
+          }
+          .Fourth_Input-Block{
+            max-width: 350px;
+          }
+          .TextArea{
+            max-width: 350px;
+          }
+          .SubmitButton{
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  section.SectionNine{
+    .SectionNine-MainContainer{
+      max-width: 780px;
+      .SectionNine-MainContainer-Middle{
+        max-width: 780px;
+        flex-wrap: wrap;
+        article{
+          width: calc(47% - 3px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 835px){
+  section.SectionTen{
+   .SectionTen-MainContainer{
+     max-width: 780px;
+     flex-wrap: wrap;
+     column-gap: 30px;
+     .SectionTen-MainContainer-Form{
+       max-width: 400px;
+       .SectionTen-MainContainer-Form-Input{
+         width: 350px;
+       }
+     }
+   }
+  }
+}
+
+@media (max-width: 805px) {
+  header{
+    .SecondDiv{
+      max-width: 765px;
+      justify-content: center;
+      .SecondDiv-MainMenu{
+        margin: 40px 25px 0 0 ;
+
+      }
+    }
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+  body .FirstDiv{
+   max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+   header{
+    .SecondDiv{
+      max-width: 700px;
       gap:5px;
       justify-content: space-around;
 
@@ -1013,6 +1302,7 @@ main{
         gap:25px;
         margin: 40px 20px 0 0;
         .SecondDiv-menu{
+          max-width: 390px;
           .SecondDiv-menu2{
             margin: 2px 0 0 0;
             p{
@@ -1054,12 +1344,16 @@ main{
   }
 
 }
+
 @media (max-width: 768px) {
-  .SectionOne{
+  section.SectionOne{
+    max-width: 700px;
     .SectionOne-MainContainer{
+      max-width: 700px;
       .SectionOne-MainContainer-Menu4{
         margin-top: 160px;
         margin-left: 60px;
+        max-width: 520px;
         .SectionOne-MainContainer-Menu4-item1{
           font-size: 14px;
           margin: 0 0 21px 0;
@@ -1083,11 +1377,17 @@ main{
   section.SectionTwo{
     padding: 50px 0 100px 0;
     .SectionTwo-MainContainer{
-      max-width: 738px;
+      justify-content: center;
+      max-width: 700px;
       gap:35px;
+      flex-wrap: wrap;
+      .SectionTwo-MainContainer-Menu1{
+        height: 500px;
+        max-width: 500px;
+      }
 
       .SectionTwo-MainContainer-Menu2{
-        max-width: 370px;
+        max-width: 540px;
         order: 2;
         .SectionTwo-MainContainer-Menu2-Paragraph{
           font-size: 16px;
@@ -1134,9 +1434,9 @@ main{
 @media (max-width: 768px){
   .SectionThree{
     .SectionThree-MainContainer{
-      max-width: 738px;
+      max-width: 700px;
       .SectionThree-MainContainer-Menu1{
-        max-width: 600px;
+        max-width: 350px;
         margin: 100px 0 40px 0;
         p:first-of-type{
           font-size: 15px;
@@ -1214,7 +1514,7 @@ main{
   section.SectionFour{
     padding: 150px 0 50px 0;
     .SectionFour-MainContainer{
-      max-width: 738px;
+      max-width: 700px;
       .SectionFour-MainContainer-Menu1{
         max-width: 554px;
         p:first-of-type{
@@ -1230,7 +1530,7 @@ main{
       }
     }
     .SectionFour-MainContainer-Menu2{
-      max-width: 738px;
+      max-width: 700px;
       .SectionFour-MainContainer-Menu2-item{
         padding-bottom: 25px;
         width: calc(48% - 3px);
@@ -1257,14 +1557,14 @@ main{
   .SectionFive{
     padding-bottom: 25px;
     .SectionFive-MainContainer{
-      max-width: 738px;
+      max-width: 700px;
       flex-wrap:wrap;
       justify-content: center;
       .SectionFive-MainContainer-Menu1{
-        max-width: 738px;
+        max-width: 700px;
         .SectionFive-MainContainer-Menu1-Inner{
-          top:18%;
-          left:20%;
+          top:10%;
+          left:2%;
           max-width: 400px;
           .SectionFive-MainContainer-Menu1-Inner-List{
             .SectionFive-MainContainer-Menu1-Inner-List-item1{
@@ -1303,7 +1603,7 @@ main{
         }
       }
       .SectionFive-MainContainer-Menu2{
-        max-width: 720px;
+        max-width: 700px;
         .SectionFive-MainContainer-Menu2-Lower{
           margin: 0 0 0 20px;
           a{
@@ -1342,7 +1642,7 @@ main{
   .SectionSix{
     .SectionSix-MainContainer{
       padding: 100px 0 120px 0;
-      max-width: 738px;
+      max-width: 700px;
       .SectionSix-MainContainer-Menu{
         gap:25px;
         flex-wrap: wrap;
@@ -1377,7 +1677,7 @@ main{
     padding: 30px 0 0 0;
 
     .SectionSeven-MainContainer {
-      max-width: 738px;
+      max-width: 700px;
       flex-wrap: wrap;
       justify-content: center;
 
@@ -1512,10 +1812,11 @@ main{
   @media (max-width: 768px) {
     .SectionEight {
       .SectionEight_MainContainer {
-        max-width: 986px;
+        max-width: 700px;
 
         .SectionEight_MainContainer-Links {
           justify-content: space-between;
+          flex-wrap: wrap;
         }
 
         .SectionEight_MainContainer_Titles {
@@ -1539,7 +1840,7 @@ main{
       padding: 20px 0 50px 0;
 
       .SectionNine-MainContainer {
-        max-width: 738px;
+        max-width: 700px;
         .SectionNine-MainContainer-Lower {
           padding: 0 15px;
           max-width: 738px;
@@ -1594,7 +1895,7 @@ main{
         .SectionNine-MainContainer-Upper {
           padding: 0 15px;
           margin-bottom: 25px;
-          max-width: 738px;
+          max-width: 700px;
 
           .SectionNine-MainContainer-Upper-Right {
             font-size: 14px;
@@ -1633,7 +1934,7 @@ main{
   @media (max-width: 768px) {
     section.SectionTen {
       .SectionTen-MainContainer {
-        max-width: 738px;
+        max-width: 700px;
         padding: 35px 0 25px 0;
         flex-wrap: wrap;
         .SectionTen-MainContainer-Form {
@@ -1666,7 +1967,7 @@ main{
     footer.Footer {
       .Footer-MainContainer {
         padding: 0 15px;
-        max-width: 738px;
+        max-width: 700px;
         .Line2{
           left:65%;
         }
@@ -1704,7 +2005,7 @@ main{
         }
       }
       .Footer-MainContainer-Lower{
-        max-width: 738px;
+        max-width: 700px;
         gap:15px;
         .Ulka{
           margin: 15px 0 0 0;
@@ -1724,34 +2025,39 @@ main{
     }
   }
 }
-
-@media (max-width: 431px) {
-  body{
-    .FirstDiv{
-      margin: 0 0 25px 0;
+@media (max-width: 576px) {
+  body {
+    .FirstDiv {
+      max-width: 520px;
       justify-content: space-around;
-      gap:30px;
-      p{
-        margin: 0 0 0 30px;
-        font-size: 14px;
-      }
       .FirstDiv_menu-list{
-        margin: 0 30px 0 0;
+        margin: 0;
+      }
+      p {
+        margin: 0;
       }
     }
   }
 }
-
-
-@media (max-width: 431px) {
+@media (max-width: 576px) {
   header{
+    .Mobile_MenuBack{
+      .SecondDiv-menu3-list-item-link2{
+        display: none;
+
+      }
+      nav{
+        .menu-btn{
+          right: -15%;
+        }
+      }
+    }
     .SecondDiv{
       padding: 0;
       width: 100%;
-      max-width: 430px;
+      max-width: 560px;
       gap:5px;
       justify-content: space-between;
-
       .SecondDiv-link{
         margin:0 0 0 10px;
         padding: 10px 0 0 0;
@@ -1787,10 +2093,7 @@ main{
       .SecondDiv-menu3{
         max-width: 650px;
         display: none;
-        .SecondDiv-menu3-list-item-link2{
-          font-size: 16px;
-          padding: 14px 32px;
-        }
+
         .SecondDiv-menu3-list{
           gap: 20px;
           padding: 29px 0 29px 35px;
@@ -1807,9 +2110,10 @@ main{
   }
 
 }
-@media (max-width: 431px) {
+@media (max-width: 576px) {
   .SectionOne{
     .SectionOne-MainContainer{
+      max-width: 520px;
       .SectionOne-MainContainer-Menu4{
         margin-top: 100px;
         margin-left: 40px;
@@ -1840,13 +2144,14 @@ main{
 }
 
 
-@media (max-width: 431px){
+@media (max-width: 576px){
   section.SectionTwo{
     padding: 50px 0 100px 0;
     .SectionTwo-MainContainer{
-      max-width: 430px;
+      max-width: 520px;
       gap:35px;
       flex-wrap: wrap;
+      justify-content: center;
       .SectionTwo-MainContainer-Menu1{
         height: 300px;
       }
@@ -1895,10 +2200,11 @@ main{
 }
 
 
-@media (max-width: 431px){
-  .SectionThree{
+@media (max-width: 576px){
+  section.SectionThree{
     .SectionThree-MainContainer{
-      max-width: 400px;
+      max-width: 520px;
+      background: #ffb342;
       .SectionThree-MainContainer-Menu1{
         max-width: 320px;
         margin: 100px 0 40px 0;
@@ -1915,8 +2221,9 @@ main{
         }
       }
       .SectionThree-MainContainer-Menu2.ui-tabs{
+        justify-content: center;
         .SectionThree-MainContainer-Menu2-List{
-          max-width: 320px;
+          max-width: 520px;
           gap:5px;
           margin-left: 30px;
           padding: 0;
@@ -1931,18 +2238,21 @@ main{
         .SectionThree-MainContainer-Menu2-List-Inner{
           display: flex;
           flex-wrap: wrap;
-          max-width: 320px;
+          max-width: 400px;
           padding-right: 25px;
+          justify-content: center;
           .ImageDiv{
             max-width: 270px;
             margin-top: 14px;
+            max-height: 200px;
             img{
-              margin: 30px 0 0 0;
-              height: 356px;
+              margin: 10px 0 0 0;
+              width: 100%;
+              height: 100%;
             }
           }
           .SectionThree-MainContainer-Menu2-Inner-List{
-            margin: 25px 15px 45px 15px;
+            margin: 25px 15px 0 15px;
             .SectionThree-MainContainer-Menu2-Inner-List-item1{
               font-size: 12px;
               line-height:220%;
@@ -1975,13 +2285,13 @@ main{
     }
   }
 }
-@media (max-width: 431px) {
+@media (max-width: 576px) {
   section.SectionFour{
     padding: 150px 0 50px 0;
     .SectionFour-MainContainer{
-      max-width: 320px;
+      max-width: 520px;
       .SectionFour-MainContainer-Menu1{
-        max-width: 320px;
+        max-width: 520px;
         p:first-of-type{
           font-size: 14px;
         }
@@ -1990,12 +2300,12 @@ main{
         }
         p:last-of-type{
           font-size: 14px;
-          max-width: 320px;
+          max-width: 520px;
         }
       }
     }
     .SectionFour-MainContainer-Menu2{
-      max-width: 320px;
+      max-width: 520px;
       .SectionFour-MainContainer-Menu2-item{
         padding-bottom: 25px;
         width: calc(98% - 3px);
@@ -2018,19 +2328,19 @@ main{
     }
   }
 }
-@media (max-width: 431px){
-  .SectionFive{
+@media (max-width: 576px){
+  section.SectionFive{
     padding-bottom: 25px;
     .SectionFive-MainContainer{
-      max-width: 320px;
+      max-width: 520px;
       flex-wrap:wrap;
       justify-content: center;
       .SectionFive-MainContainer-Menu1{
-        max-width: 320px;
+        max-width: 520px;
         .SectionFive-MainContainer-Menu1-Inner{
-          top:15%;
-          left:8%;
-          max-width: 320px;
+          top:25%;
+          left:20%;
+          max-width: 520px;
           .SectionFive-MainContainer-Menu1-Inner-List{
             .SectionFive-MainContainer-Menu1-Inner-List-item1{
               margin: 15px 20px 15px 20px;
@@ -2072,7 +2382,8 @@ main{
         }
       }
       .SectionFive-MainContainer-Menu2{
-        max-width: 320px;
+        max-width: 520px;
+        justify-content: center;
         .SectionFive-MainContainer-Menu2-Lower{
           margin: 0 0 0 20px;
           a{
@@ -2089,7 +2400,8 @@ main{
           }
         }
         .SectionFive-MainContainer-Menu2-Upper{
-          max-width: 320px;
+          max-width: 520px;
+          text-align: center;
           margin: 15px 0 20px 20px;
           p:first-of-type{
             font-size: 12px;
@@ -2107,17 +2419,18 @@ main{
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 576px) {
   .SectionSix{
     .SectionSix-MainContainer{
       padding: 100px 0 120px 0;
-      max-width: 320px;
+      max-width: 520px;
+      justify-content: center;
       .SectionSix-MainContainer-Menu{
         gap:25px;
         flex-wrap: wrap;
         figure{
           padding: 21px 21px 19px 21px;
-          width: calc(97% - 3px);
+
           h3{
             font-size: 18px;
           }
@@ -2128,7 +2441,7 @@ main{
       }
       .SectionSix-MainContainer-Menu1{
         margin: 0 60px 30px 60px;
-        max-width: 320px;
+        max-width: 520px;
         h2{
           font-size: 34px;
         }
@@ -2145,18 +2458,18 @@ main{
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 576px) {
   section.SectionSeven {
     padding: 30px 0 0 0;
 
     .SectionSeven-MainContainer {
-      max-width: 320px;
+      max-width: 520px;
       flex-wrap: wrap;
       justify-content: center;
 
       .SectionSeven-MainContainer-Menu {
 
-        max-width: 320px;
+        max-width: 520px;
         padding-left: 5px;
         padding-right: 5px;
 
@@ -2211,19 +2524,23 @@ main{
   }
 
 
-  @media (max-width: 431px) {
-    section.SectionSeven{
-      .SectionSeven-MainContainer{
-        .SectionSeven-MainContainer-Menu{
+  @media (max-width: 576px) {
+    section.SectionSeven {
+      .SectionSeven-MainContainer {
+        max-width: 520px;
+
+        .SectionSeven-MainContainer-Menu {
           text-align: center;
 
           .SectionSeven-MainContainer-Menu-Inner2 {
             padding: 40px 0 40px 0;
-            .SectionSeven-MainContainer-Menu-Inner2-List2{
+
+            .SectionSeven-MainContainer-Menu-Inner2-List2 {
               max-width: 420px;
-              span{
+
+              span {
                 font-size: 21px;
-                margin:0 0 0 10px;
+                margin: 0 0 0 10px;
               }
             }
 
@@ -2249,46 +2566,65 @@ main{
     }
   }
 
-  @media (max-width: 431px) {
-    .SectionSeven {
+  @media (max-width: 576px) {
+    section.SectionSeven {
       .SectionSeven-MainContainer {
+        max-width: 520px;
+
         .SectionSeven-MainContainer-Menu1 {
           text-align: center;
-          max-width: 320px;
+          max-width: 520px;
           margin: 50px 0 0 1px;
+
           .SectionSeven-MainContainer-Menu1-Form {
             padding: 20px 5px 25px 5px;
-            .ServiceDescription{
-              width: 370px;
-              height: 160px;
-            }
-              .First_Input-Block{
-                .First_Input{
-                  width: 370px;
-                  height: 60px;
-                }
-              }
-            .Fourth_Input-Block{
-              .Fourth_Input{
-                width: 370px;
-                height: 60px;
+
+            .TextArea {
+              max-width: 520px;
+
+              .ServiceDescription {
+                width: 100%;
+                height: 160px;
               }
             }
-            .Second_Input-Block{
-              .Second_Input{
-                width: 370px;
-                height: 60px;
-              }
-            }
-            .Third_Input-Block{
-              .Third_Input{
-                width: 370px;
+
+            .First_Input-Block {
+              max-width: 520px;
+
+              .First_Input {
+                width: 100%;
                 height: 60px;
               }
             }
 
+            .Fourth_Input-Block {
+              max-width: 520px;
+
+              .Fourth_Input {
+                width: 100%;
+                height: 60px;
+              }
             }
 
+            .Second_Input-Block {
+              max-width: 520px;
+
+              .Second_Input {
+                width: 100%;
+                height: 60px;
+              }
+            }
+
+            .Third_Input-Block {
+              max-width: 520px;
+
+              .Third_Input {
+                width: 100%;
+                height: 60px;
+              }
+            }
+
+          }
 
 
           .Paragraph {
@@ -2298,9 +2634,10 @@ main{
 
           .Title {
             font-size: 34px;
-            margin: 0 0 35px 45px;
+            margin: 0 0 35px 5px;
           }
-          .SubmitButton{
+
+          .SubmitButton {
             font-size: 14px;
             width: 370px;
             height: 60px;
@@ -2312,22 +2649,28 @@ main{
   }
 
 
-  @media (max-width: 431px) {
-    .SectionEight {
+  @media (max-width: 576px) {
+    section.SectionEight {
       .SectionEight_MainContainer {
-        max-width: 370px;
-        .SectionEight_MainContainer_Titles{
+        max-width: 480px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .SectionEight_MainContainer_Titles {
           margin: 0;
         }
 
         .SectionEight_MainContainer-Links {
-          justify-content: space-between;
+          justify-content: space-around;
           flex-wrap: wrap;
-          column-gap: 25px;
-          margin: 35px 0 0 0;
-          a{
+          column-gap: 15px;
+          margin: 35px 0 0 45px;
+
+          a {
             width: calc(47% - 3px);
-            svg{
+
+            svg {
               width: 150px;
             }
           }
@@ -2335,41 +2678,45 @@ main{
 
         .SectionEight_MainContainer_Titles {
           .TitleH {
-            max-width: 320px;
+            max-width: 520px;
             font-size: 14px;
             margin-bottom: 15px;
           }
 
           .Title2 {
             font-size: 34px;
-            margin: 0 ;
+            margin: 0;
           }
         }
       }
     }
   }
 
-  @media (max-width: 431px) {
+  @media (max-width: 576px) {
     section.SectionNine {
       padding: 20px 0 50px 0;
 
       .SectionNine-MainContainer {
-        max-width: 320px;
+        max-width: 520px;
+
         .SectionNine-MainContainer-Lower {
           padding: 0 15px;
-          max-width: 320px;
-          gap:25px;
+          max-width: 520px;
+          gap: 25px;
           flex-wrap: wrap;
         }
 
         .SectionNine-MainContainer-Middle {
-          margin: 10px 0 0 0 ;
+          margin: 10px 0 0 0;
           padding: 0 15px;
-          max-width: 320px;
+          max-width: 520px;
           flex-wrap: wrap;
+          display: flex;
+          justify-content: center;
 
           article {
-            width: calc(97% - 3px);
+            width: calc(90% - 3px);
+
             .Article-Link {
               font-size: 14px;
               padding: 15px 47px;
@@ -2410,8 +2757,9 @@ main{
         .SectionNine-MainContainer-Upper {
           padding: 0 15px;
           margin-bottom: 25px;
-          max-width: 320px;
+          max-width: 520px;
           flex-wrap: wrap;
+          justify-content: center;
           text-align: center;
 
           .SectionNine-MainContainer-Upper-Right {
@@ -2421,18 +2769,20 @@ main{
 
           .SectionNine-MainContainer-Upper-Left {
             max-width: 340px;
+
             .Left-Item1 {
               font-size: 12px;
               margin: 10px 0 16px 0;
-              line-height: 190%;
-              &::before{
+              line-height: 210%;
+
+              &::before {
                 content: "";
                 width: 22px;
                 height: 27px;
                 display: inline-block;
                 background-image: url(../Images/Testimonial.svg);
                 position: relative;
-                top:5px;
+                top: 5px;
 
               }
             }
@@ -2449,12 +2799,13 @@ main{
   }
 
 
-  @media (max-width: 431px) {
+  @media (max-width: 576px) {
     section.SectionTen {
       .SectionTen-MainContainer {
-        max-width: 400px;
+        max-width: 520px;
         padding: 35px 0 25px 0;
         flex-wrap: wrap;
+
         .SectionTen-MainContainer-Form {
           .SectionTen-MainContainer-Form-Input {
             width: 260px;
@@ -2469,6 +2820,7 @@ main{
         .SectionTen-MainContainer-Menu {
           margin-bottom: 35px;
           text-align: center;
+
           .SectionTen-MainContainer-Menu-Title {
             font-size: 22px;
             margin-left: 35px;
@@ -2482,36 +2834,35 @@ main{
     }
   }
 
-  @media (max-width: 431px) {
+  @media (max-width: 576px) {
     footer.Footer {
       .Footer-MainContainer {
+
         padding: 0 15px;
-        max-width: 400px;
+        max-width: 528px;
         .Line2{
           left:65%;
         }
 
         .Footer-MainContainer-Upper {
-          flex-wrap: wrap;
-          justify-content: space-around;
-
-          .Linka{
-            width: calc(47% - 3px);
-            p{
-              font-size: 14px;
-              span{
-                font-size: 12px;
-              }
-            }
-          }
+          flex-wrap: nowrap;
+          justify-content: space-evenly;
+          align-items: center;
+          max-width: 540px;
+          gap: 15px;
           .Footer-MainContainer-Upper-Link:last-of-type{
-            margin: 15px 5px 0 0;
+            margin: 15px 15px 0 0;
           }
           .Footer-MainContainer-Upper-Link:nth-of-type(2){
             margin: 15px 0 0 10px;
           }
+          .Footer-MainContainer-Upper-Link.Linka{
+            margin-top: 20px;
+          }
           .Footer-MainContainer-Upper-Link{
             width: calc(47% - 3px);
+            display: block;
+
             a{
 
               img{
@@ -2519,17 +2870,15 @@ main{
                 height: 50px;
               }
             }
-          }
             p{
-              font-size: 16px;
+              display: none;
+              font-size: 18px;
               margin: 3px 0 0 15px;
             }
           }
           .Footer-MainContainer-Upper-Link1{
             max-width: 230px;
-            margin: 10px 0 0 0;
-
-            }
+            margin-left: 25px;
             img{
               width: 100%;
             }
@@ -2538,31 +2887,964 @@ main{
         }
       }
       .Footer-MainContainer-Lower{
-        max-width: 400px;
-        gap:1px;
+        max-width: 540px;
+        display: flex;
         flex-wrap: wrap;
-        .Footer-MainContainer-Lower-List1.Ulka{
-          margin-left: 25px;
-        }
-        .Footer-MainContainer-Lower-List3.Ulka.Last-List{
-          margin-left: 25px;
-        }
-        .Footer-MainContainer-Lower-List2.Ulka.LastButOne{
-          margin-right: 25px;
-        }
-
+        justify-content: space-around;
+        gap:15px;
         .Ulka{
           margin: 15px 0 0 0;
-          width: calc(40% - 3px);
+        }
+        .LastButOne{
+          margin-right: 0;
+
+        }
+        .Footer-MainContainer-Lower-Left{
+          max-width: 320px;
+          margin: 50px 0 0 0;
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+  @media (max-width: 431px) {
+    body {
+      .FirstDiv {
+        max-width: 360px;
+        margin: 0 0 25px 0;
+        justify-content: space-around;
+        gap: 30px;
+
+        p {
+          margin: 0 0 0 30px;
+          font-size: 14px;
+        }
+
+        .FirstDiv_menu-list {
+          margin: 0 30px 0 0;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 431px) {
+    header {
+      .SecondDiv {
+        padding: 0;
+        width: 100%;
+        max-width: 360px;
+        gap: 5px;
+        justify-content: space-between;
+
+        .SecondDiv-link {
+          margin: 0 0 0 10px;
+          padding: 10px 0 0 0;
+          max-width: 200px;
+
+          img {
+            width: 90%;
+          }
+        }
+
+        .SecondDiv-MainMenu {
+          gap: 5px;
+          margin: 0 15px 0 0;
+
+          .SecondDiv-menu {
+            .SecondDiv-menu2 {
+              display: none;
+              margin: 2px 0 0 0;
+
+              p {
+                font-size: 18px;
+              }
+
+              a {
+                font-size: 15px;
+              }
+            }
+
+            .SecondDiv-menu1 {
+              .SecondDiv-menu-link {
+                img {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+            }
+          }
+        }
+
+        .SecondDiv-menu3 {
+          max-width: 650px;
+          display: none;
+
+          .SecondDiv-menu3-list-item-link2 {
+            font-size: 16px;
+            padding: 14px 32px;
+          }
+
+          .SecondDiv-menu3-list {
+            gap: 20px;
+            padding: 29px 0 29px 35px;
+
+            .SecondDiv-menu3-list-item {
+              .SecondDiv-menu3-list-item-link {
+                font-size: 16px;
+                line-height: 140%;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  @media (max-width: 431px) {
+    .SectionOne {
+      .SectionOne-MainContainer {
+        .SectionOne-MainContainer-Menu4 {
+          margin-top: 100px;
+          margin-left: 40px;
+
+          .SectionOne-MainContainer-Menu4-item1 {
+            font-size: 12px;
+            margin: 0 0 12px 0;
+            line-height: 180%;
+            max-width: 320px;
+
+            &::before {
+              position: relative;
+              top: 5px;
+              right: 5px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          .SectionOne-MainContainer-Menu4-item2 {
+            font-size: 36px;
+            max-width: 342px;
+          }
+
+          .SectionOne-MainContainer-Menu4-Link {
+            font-size: 14px;
+            padding: 14px 28px;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 431px) {
+    section.SectionTwo {
+      padding: 50px 0 100px 0;
+
+      .SectionTwo-MainContainer {
+        max-width: 430px;
+        gap: 35px;
+        flex-wrap: wrap;
+
+        .SectionTwo-MainContainer-Menu1 {
+          height: 300px;
+        }
+
+        .SectionTwo-MainContainer-Menu2 {
+          max-width: 370px;
+          order: 2;
+
+          .SectionTwo-MainContainer-Menu2-Paragraph {
+            font-size: 16px;
+            display: inline-block;
+            margin: 18px 0 18px 0;
+            padding-right: 15px;
+
+            &::before {
+              position: relative;
+              top: 5px;
+            }
+          }
+
+          h2 {
+            font-size: 34px;
+          }
+
+          .SectionTwo-MainContainer-Menu2-Paragraph2 {
+            font-size: 14px;
+          }
+
+          .SectionTwo-MainContainer-Menu2-Paragraph3 {
+            font-size: 14px;
+            margin: 15px 0 30px 0;
+          }
+
+          .SectionTwo-MainContainer-Menu2-Inner {
+            gap: 20px;
+
+            img {
+              width: 80%;
+              height: 100%;
+              padding-top: 0;
+            }
+
+            .SectionTwo-MainContainer-Menu2-Inner-list {
+              li:first-of-type {
+                margin: 5px 0 5px 0;
+              }
+
+              li {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 431px) {
+    section.SectionThree{
+      .SectionThree-MainContainer{
+        max-width: 390px;
+        background: #ffb342;
+        .SectionThree-MainContainer-Menu1{
+          max-width: 390px;
+          margin: 100px 0 40px 0;
+          p:first-of-type{
+            font-size: 14px;
+            line-height: 190%;
+            padding: 0 20px 0 23px;
+          }
+          h2{
+            font-size: 34px;
+          }
+          p:last-of-type{
+            font-size: 14px;
+          }
+        }
+        .SectionThree-MainContainer-Menu2.ui-tabs{
+          justify-content: center;
+          .SectionThree-MainContainer-Menu2-List{
+            max-width: 390px;
+            gap:5px;
+            margin-left: 30px;
+            padding: 0;
+            .ui-state-default{
+              padding: 4px 8px;
+              .ui-tabs-anchor{
+                font-size: 0;
+                line-height: 150%;
+              }
+            }
+          }
+          .SectionThree-MainContainer-Menu2-List-Inner{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 320px;
+            padding-right: 5px;
+            justify-content: center;
+            margin-left: 5px;
+            .ImageDiv{
+              max-width: 270px;
+              margin-top: 14px;
+              max-height: 200px;
+              img{
+                margin: 10px 0 0 0;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .SectionThree-MainContainer-Menu2-Inner-List{
+              margin: 25px 15px 0 15px;
+              .SectionThree-MainContainer-Menu2-Inner-List-item1{
+                font-size: 12px;
+                line-height:220%;
+                &::before{
+                  content: "";
+                  width: 22px;
+                  height: 22px;
+                  background-image: url("../Images/ElectricalInstalation.svg");
+                  display: inline-block;
+                  position: relative;
+                  margin: 0 5px 0 0;
+                  top:5px;
+                }
+              }
+              h2{
+                font-size: 34px;
+              }
+              .SectionThree-MainContainer-Menu2-Inner-List-item2{
+                max-width: 330px;
+                font-size: 12px;
+                line-height: 140%;
+              }
+              a{
+                font-size: 14px;
+                padding: 8px 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 431px) {
+    section.SectionFour {
+      padding: 150px 0 50px 0;
+
+      .SectionFour-MainContainer {
+        max-width: 320px;
+
+        .SectionFour-MainContainer-Menu1 {
+          max-width: 320px;
+
+          p:first-of-type {
+            font-size: 14px;
+          }
+
+          h2 {
+            font-size: 34px;
+          }
+
+          p:last-of-type {
+            font-size: 14px;
+            max-width: 320px;
+          }
+        }
+      }
+
+      .SectionFour-MainContainer-Menu2 {
+        max-width: 320px;
+
+        .SectionFour-MainContainer-Menu2-item {
+          padding-bottom: 25px;
+          width: calc(98% - 3px);
+
+          img {
+            margin: 30px 0 15px 25px;
+          }
+
+          h3 {
+            font-size: 18px;
+            margin: 0 0 15px 30px;
+          }
+
+          p {
+            font-size: 12px;
+            margin: 0 0 22px 30px;
+          }
+
+          a {
+            font-size: 12px;
+            margin: 0 0 22px 30px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 431px) {
+    .SectionFive {
+      padding-bottom: 25px;
+
+      .SectionFive-MainContainer {
+        max-width: 320px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .SectionFive-MainContainer-Menu1 {
+          max-width: 320px;
+
+          .SectionFive-MainContainer-Menu1-Inner {
+            top: 15%;
+            left: 8%;
+            max-width: 320px;
+
+            .SectionFive-MainContainer-Menu1-Inner-List {
+              .SectionFive-MainContainer-Menu1-Inner-List-item1 {
+                margin: 15px 20px 15px 20px;
+                padding: 0 10px 0 0;
+                font-size: 18px;
+
+                span {
+                  font-size: 20px;
+                  padding: 8px 21px 8px 14px;
+                }
+              }
+
+              .SectionFive-MainContainer-Menu1-Inner-List-item2 {
+                margin: 15px 20px 15px 20px;
+                padding: 0 10px 0 0;
+                font-size: 18px;
+
+                span {
+                  font-size: 19px;
+                  padding: 8px 21px 8px 14px;
+                }
+              }
+
+              .SectionFive-MainContainer-Menu1-Inner-List-item3 {
+                margin: 15px 20px 15px 20px;
+                padding: 0 10px 0 0;
+                font-size: 18px;
+
+                span {
+                  font-size: 19px;
+                  padding: 8px 21px 8px 14px;
+                }
+              }
+
+              .SectionFive-MainContainer-Menu1-Inner-List-item4 {
+                margin: 15px 20px 15px 20px;
+                padding: 0 5px 0 0;
+                font-size: 18px;
+
+                span {
+                  font-size: 19px;
+                  padding: 8px 21px 8px 14px;
+                }
+              }
+            }
+          }
+        }
+
+        .SectionFive-MainContainer-Menu2 {
+          max-width: 320px;
+
+          .SectionFive-MainContainer-Menu2-Lower {
+            margin: 0 0 0 20px;
+
+            a {
+              font-size: 14px;
+
+              &::before {
+                width: 32px;
+                height: 32px;
+                margin-right: 17px;
+              }
+            }
+
+            p {
+              font-size: 12px;
+              margin-bottom: 20px;
+            }
+          }
+
+          .SectionFive-MainContainer-Menu2-Upper {
+            max-width: 320px;
+            margin: 15px 0 20px 20px;
+
+            p:first-of-type {
+              font-size: 12px;
+              margin: 10px 0 15px 0;
+            }
+
+            h2 {
+              font-size: 34px;
+            }
+
+            p:nth-of-type(2) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 431px) {
+    .SectionSix {
+      .SectionSix-MainContainer {
+        padding: 100px 0 120px 0;
+        max-width: 320px;
+
+        .SectionSix-MainContainer-Menu {
+          gap: 25px;
+          flex-wrap: wrap;
+
+          figure {
+            padding: 21px 21px 19px 21px;
+            width: calc(97% - 3px);
+
+            h3 {
+              font-size: 18px;
+            }
+
+            figcaption {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .SectionSix-MainContainer-Menu1 {
+          margin: 0 60px 30px 60px;
+          max-width: 320px;
+
+          h2 {
+            font-size: 34px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 220%;
+            max-width: 320px;
+
+            &::before {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 431px) {
+    section.SectionSeven {
+      padding: 30px 0 0 0;
+
+      .SectionSeven-MainContainer {
+        max-width: 320px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .SectionSeven-MainContainer-Menu {
+
+          max-width: 320px;
+          padding-left: 5px;
+          padding-right: 5px;
+
+          .Menu-Item {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+
+          h4 {
+            font-size: 36px;
+            margin-bottom: 25px;
+          }
+
+          .SectionSeven-MainContainer-Menu-Inner1 {
+            blockquote {
+              font-size: 16px;
+
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .SectionSeven-MainContainer-Menu-Inner {
+            padding: 35px 50px 26px 31px;
+            border: 1px solid #e4e4e4;
+            margin: 0 0 25px 0;
+
+            .SectionSeven-MainContainer-Menu-Inner-Item {
+              img {
+                margin: 0 10px 0 0;
+              }
+
+              .SectionSeven-MainContainer-Menu-Inner-Item-Customer {
+                img {
+                  margin-right: 5px;
+                }
+
+                p {
+                  margin: 5px 0 0 5px;
+                  font-size: 17px;
+
+                  span {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
 
 
+    @media (max-width: 431px) {
+      section.SectionSeven {
+        .SectionSeven-MainContainer {
+          .SectionSeven-MainContainer-Menu {
+            text-align: center;
+
+            .SectionSeven-MainContainer-Menu-Inner2 {
+              padding: 40px 0 40px 0;
+
+              .SectionSeven-MainContainer-Menu-Inner2-List2 {
+                max-width: 420px;
+
+                span {
+                  font-size: 21px;
+                  margin: 0 0 0 10px;
+                }
+              }
+
+              .SectionSeven-MainContainer-Menu-Inner2-List {
+                margin: 0 0 0 10px;
+
+                .Item2_Of_list {
+                  font-size: 14px;
+                  margin-bottom: 10px;
+                }
+
+                .Item3_Of_list {
+                  margin-bottom: 20px;
+                }
+
+                .Menu-Item4 {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 431px) {
+      .SectionSeven {
+        .SectionSeven-MainContainer {
+          .SectionSeven-MainContainer-Menu1 {
+            text-align: center;
+            max-width: 320px;
+            margin: 50px 0 0 1px;
+
+            .SectionSeven-MainContainer-Menu1-Form {
+              padding: 20px 5px 25px 5px;
+
+              .ServiceDescription {
+                width: 370px;
+                height: 160px;
+              }
+
+              .First_Input-Block {
+                .First_Input {
+                  width: 370px;
+                  height: 60px;
+                }
+              }
+
+              .Fourth_Input-Block {
+                .Fourth_Input {
+                  width: 370px;
+                  height: 60px;
+                }
+              }
+
+              .Second_Input-Block {
+                .Second_Input {
+                  width: 370px;
+                  height: 60px;
+                }
+              }
+
+              .Third_Input-Block {
+                .Third_Input {
+                  width: 370px;
+                  height: 60px;
+                }
+              }
+
+            }
 
 
-@media (min-width: 432px) {
-  .Mobile_MenuBack{
-    display: none;
+            .Paragraph {
+              font-size: 14px;
+              margin: 0 0 15px 0;
+            }
+
+            .Title {
+              font-size: 34px;
+              margin: 0 0 35px 45px;
+            }
+
+            .SubmitButton {
+              font-size: 14px;
+              width: 370px;
+              height: 60px;
+            }
+          }
+        }
+      }
+
+    }
+
+
+    @media (max-width: 431px) {
+      .SectionEight {
+        .SectionEight_MainContainer {
+          max-width: 370px;
+
+          .SectionEight_MainContainer_Titles {
+            margin: 0;
+          }
+
+          .SectionEight_MainContainer-Links {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 25px;
+            margin: 35px 0 0 0;
+
+            a {
+              width: calc(47% - 3px);
+
+              svg {
+                width: 150px;
+              }
+            }
+          }
+
+          .SectionEight_MainContainer_Titles {
+            .TitleH {
+              max-width: 320px;
+              font-size: 14px;
+              margin-bottom: 15px;
+            }
+
+            .Title2 {
+              font-size: 34px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 431px) {
+      section.SectionNine {
+        padding: 20px 0 50px 0;
+
+        .SectionNine-MainContainer {
+          max-width: 320px;
+
+          .SectionNine-MainContainer-Lower {
+            padding: 0 15px;
+            max-width: 320px;
+            gap: 25px;
+            flex-wrap: wrap;
+          }
+
+          .SectionNine-MainContainer-Middle {
+            margin: 10px 0 0 0;
+            padding: 0 15px;
+            max-width: 320px;
+            flex-wrap: wrap;
+
+            article {
+              width: calc(97% - 3px);
+
+              .Article-Link {
+                font-size: 14px;
+                padding: 15px 47px;
+              }
+
+              padding: 30px 40px 30px 40px;
+
+              .SectionNine-MainContainer-Middle-List {
+                padding: 0 30px 0 0;
+                margin: 0 0 45px 0;
+
+                .SectionNine-MainContainer-Middle-List-Item {
+                  font-size: 12px;
+                  margin: 0 0 15px 0;
+                }
+              }
+
+              .Article-Element {
+                padding: 0 0 25px 0;
+                margin: 0 0 18px 0;
+
+                .Article-Element-Title {
+                  font-size: 16px;
+                }
+
+                .Article-Element-Span1 {
+                  font-size: 20px;
+                  margin: 0 15px 0 0;
+                }
+
+                .Article-Element-Span2 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+
+          .SectionNine-MainContainer-Upper {
+            padding: 0 15px;
+            margin-bottom: 25px;
+            max-width: 320px;
+            flex-wrap: wrap;
+            text-align: center;
+
+            .SectionNine-MainContainer-Upper-Right {
+              font-size: 12px;
+              margin: 0 7px 16px 0;
+            }
+
+            .SectionNine-MainContainer-Upper-Left {
+              max-width: 340px;
+
+              .Left-Item1 {
+                font-size: 12px;
+                margin: 10px 0 16px 0;
+                line-height: 190%;
+
+                &::before {
+                  content: "";
+                  width: 22px;
+                  height: 27px;
+                  display: inline-block;
+                  background-image: url(../Images/Testimonial.svg);
+                  position: relative;
+                  top: 5px;
+
+                }
+              }
+
+              .Left-Item2 {
+                font-size: 32px;
+                margin-bottom: 25px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+
+    @media (max-width: 431px) {
+      section.SectionTen {
+        .SectionTen-MainContainer {
+          max-width: 400px;
+          padding: 35px 0 25px 0;
+          flex-wrap: wrap;
+
+          .SectionTen-MainContainer-Form {
+            .SectionTen-MainContainer-Form-Input {
+              width: 260px;
+              height: 40px;
+            }
+
+            .SubscribeButton {
+              padding: 8px 26px;
+            }
+          }
+
+          .SectionTen-MainContainer-Menu {
+            margin-bottom: 35px;
+            text-align: center;
+
+            .SectionTen-MainContainer-Menu-Title {
+              font-size: 22px;
+              margin-left: 35px;
+            }
+
+            .SectionTen-MainContainer-Menu-Paragraph {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 431px) {
+      footer.Footer {
+        .Footer-MainContainer {
+         .Line{
+           display: none;
+         }
+          padding: 0 15px;
+          max-width: 528px;
+          .Line2{
+            left:65%;
+            display: none;
+          }
+
+          .Footer-MainContainer-Upper {
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            max-width: 320px;
+            gap: 15px;
+            .Footer-MainContainer-Upper-Link:last-of-type{
+              margin: 15px 15px 0 0;
+            }
+            .Footer-MainContainer-Upper-Link:nth-of-type(2){
+              margin: 15px 0 0 10px;
+            }
+            .Footer-MainContainer-Upper-Link.Linka{
+              margin-top: 20px;
+            }
+            .Footer-MainContainer-Upper-Link{
+              width: calc(47% - 3px);
+              display: block;
+
+              a{
+
+                img{
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+              p{
+                display: none;
+                font-size: 18px;
+                margin: 3px 0 0 15px;
+              }
+            }
+            .Footer-MainContainer-Upper-Link1{
+              max-width: 230px;
+              margin-left: 25px;
+              img{
+                width: 100%;
+              }
+
+            }
+          }
+        }
+        .Footer-MainContainer-Lower{
+          max-width: 320px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          gap:15px;
+          .Ulka{
+            margin: 15px 0 0 0;
+          }
+          .LastButOne{
+            margin-right: 0;
+
+          }
+          .Footer-MainContainer-Lower-Left{
+            max-width: 320px;
+            margin: 50px 0 0 0;
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
-}
+
+
+  @media (min-width: 577px) {
+    .Mobile_MenuBack {
+      display: none;
+    }
+  }
+

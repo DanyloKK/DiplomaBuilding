@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 .Mobile_MenuBack{
- justify-content: space-around;
+ justify-content: space-between;
   background: white;
   max-height: 50px;
   display: flex;
@@ -27,9 +27,10 @@ body {
     font-size: 14px;
     margin: 0 15px 0 0;
     text-decoration: none;
-   padding:10px 0 10px 25px;
+   padding:5px;
     background: #1C2752;
     color: white;
+    max-height: 100px;
   }
 
 
@@ -253,4 +254,10 @@ nav {
     }
   }
 }
+}
+
+@media (max-width: 431px) {
+  .Mobile_MenuBack{
+    max-width: 360px;
+  }
 }

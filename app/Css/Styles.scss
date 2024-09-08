@@ -6,6 +6,7 @@
 }
 body{
   background: white;
+
 }
 %TextStyle{
   text-decoration: none;
@@ -941,14 +942,16 @@ body{
   background: #f4f4f4;
   .First_Input-Block{
     margin: 0 0 25px 0;
+    max-width: 484px;
    .First_Input{
-     width: 484px;
+     width: 100%;
      height: 65px;
      background: white;
+     padding-left: 40px;
      @include Styles(400, 17px,159%, 0.02em, #1c2752);
      &::placeholder{
        @include Styles(400, 17px,159%, 0.02em, #1c2752);
-       padding: 0 0 0 45px;
+
      }
      &:focus{
      &::placeholder{
@@ -960,13 +963,15 @@ body{
   }
   .Second_Input-Block{
     margin: 0 0 25px 0;
+    max-width: 484px;
     .Second_Input{
-      width: 484px;
+      width: 100%;
       height: 65px;
       background: white;
+      padding-left: 40px;
       &::placeholder{
         @include Styles(400, 17px,159%, 0.02em, #1c2752);
-        padding: 0 0 0 45px;
+
       }
       &:focus{
         &::placeholder{
@@ -978,14 +983,15 @@ body{
   }
   .Third_Input-Block{
     margin: 0 0 25px 0;
+    max-width: 484px;
     .Third_Input{
-      width: 484px;
+      width: 100%;
       height: 65px;
       background: white;
+      padding-left: 40px;
       @include Styles(400, 17px,159%, 0.02em, #1c2752);
       &::placeholder{
         @include Styles(400, 17px,159%, 0.02em, #1c2752);
-        padding: 0 0 0 45px;
       }
       &:focus{
         &::placeholder{
@@ -997,14 +1003,15 @@ body{
   }
   .Fourth_Input-Block{
     margin: 0 0 25px 0;
+    max-width: 484px;
     .Fourth_Input{
-      width: 484px;
+      width: 100%;
       height: 65px;
       background: white;
+      padding-left: 40px;
       @include Styles(400, 17px,159%, 0.02em, #1c2752);
       &::placeholder{
         @include Styles(400, 17px,159%, 0.02em, #1c2752);
-        padding: 0 0 0 45px;
       }
       &:focus{
         &::placeholder{
@@ -1015,14 +1022,16 @@ body{
 
   }
 }
-
-.ServiceDescription{
-  width: 484px;
-  height: 150px;
- resize: none;
-  overflow: auto;
-  margin: 0 0 35px 0;
-  @include Styles(400, 17px,159%, 0.02em, #1c2752);
+.TextArea{
+  max-width: 484px;
+  .ServiceDescription{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    overflow: auto;
+    margin: 0 0 35px 0;
+    @include Styles(400, 17px,159%, 0.02em, #1c2752);
+  }
 }
 .SubmitButton{
   width: 484px;
@@ -1242,12 +1251,12 @@ body{
   .SectionTen-MainContainer-Form-Input{
     width: 389px;
     height: 68px;
+    padding-left: 40px;
     background: #ffb342;
     border: 1px solid #fff;
     border-right: none;
     &::placeholder{
       @include Styles(400,17px,159%, 0.02em, #fff);
-      padding: 0 0 0 25px;
     }
     &:focus{
       &::placeholder{
@@ -1255,6 +1264,7 @@ body{
       }
     }
   }
+
   .SubscribeButton{
     @include Styles(400,17px,159%, 0.02em, #1c2752);
     background: white;
