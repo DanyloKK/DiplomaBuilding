@@ -6,7 +6,7 @@ console.clear();
 
 const nav = document.querySelector("nav");
 const navLinksContainer = document.querySelector(".nav-links");
-const navLinks = [...document.querySelectorAll(".link")];
+const navLinks = [...document.querySelectorAll(".list")];
 const menuBtn = document.querySelector(".menu-btn");
 const subMenuBtn = document.querySelector(".sub-menu-btn");
 

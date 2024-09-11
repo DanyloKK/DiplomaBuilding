@@ -1089,8 +1089,11 @@ main{
   section.SectionTwo{
     .SectionTwo-MainContainer{
       max-width: 780px;
+      flex-wrap: wrap;
+      justify-content: center;
       .SectionTwo-MainContainer-Menu1{
-        max-width: 400px;
+        max-width: 700px;
+        height: 500px;
       }
       .SectionTwo-MainContainer-Menu2{
         max-width: 457px;
@@ -1105,7 +1108,9 @@ main{
         }
 
         .SectionTwo-MainContainer-Menu2-Inner{
-          max-width: 451px;
+          max-width: 450px;
+          flex-wrap: nowrap;
+          gap:15px;
         }
       }
     }
@@ -1130,15 +1135,16 @@ main{
     .SectionThree-MainContainer-Menu2.ui-tabs{
       max-width: 750px;
       .SectionThree-MainContainer-Menu2-List-Inner{
-        max-width: 630px;
+        max-width: 550px;
       }
       .SectionThree-MainContainer-Menu2-List{
         max-width: 610px;
         margin-left: 45px;
         .ui-state-default{
-          padding: 6px 20px;
+          padding: 0;
           .ui-tabs-anchor{
             font-size: 16px;
+            padding: 8px 16px;
           }
         }
       }
@@ -1171,6 +1177,9 @@ main{
       max-width: 780px;
       .SectionFive-MainContainer-Menu1{
         max-width: 464px;
+        .SectionFive-MainContainer-Menu1-Inner{
+          left:5%;
+        }
         .SectionFive-MainContainer-Menu1-Inner{
           max-width: 400px;
         }
@@ -1223,7 +1232,6 @@ main{
             max-width: 350px;
           }
           .SubmitButton{
-            width: 350px;
           }
         }
       }
@@ -1286,7 +1294,7 @@ main{
 @media (max-width: 768px) {
    header{
     .SecondDiv{
-      max-width: 700px;
+      max-width: 730px;
       gap:5px;
       justify-content: space-around;
 
@@ -1347,7 +1355,6 @@ main{
 
 @media (max-width: 768px) {
   section.SectionOne{
-    max-width: 700px;
     .SectionOne-MainContainer{
       max-width: 700px;
       .SectionOne-MainContainer-Menu4{
@@ -1383,7 +1390,7 @@ main{
       flex-wrap: wrap;
       .SectionTwo-MainContainer-Menu1{
         height: 500px;
-        max-width: 500px;
+        max-width: 700px;
       }
 
       .SectionTwo-MainContainer-Menu2{
@@ -1411,6 +1418,11 @@ main{
         }
         .SectionTwo-MainContainer-Menu2-Inner{
           gap:20px;
+          flex-wrap: nowrap;
+          max-width: 650px;
+          .SectionTwo-MainContainer-Menu2-Inner-list{
+            margin-top: 25px;
+          }
           img{
             width: 80%;
             height: 100%;
@@ -1457,7 +1469,7 @@ main{
           margin-left: 30px;
           padding: 0;
           .ui-state-default{
-            padding: 13px 22px;
+            padding: 0;
             .ui-tabs-anchor{
               font-size: 16px;
               line-height: 150%;
@@ -1554,7 +1566,7 @@ main{
   }
 }
 @media (max-width: 768px){
-  .SectionFive{
+  section.SectionFive{
     padding-bottom: 25px;
     .SectionFive-MainContainer{
       max-width: 700px;
@@ -1563,8 +1575,8 @@ main{
       .SectionFive-MainContainer-Menu1{
         max-width: 700px;
         .SectionFive-MainContainer-Menu1-Inner{
-          top:10%;
-          left:2%;
+          top:20%;
+          left:20%;
           max-width: 400px;
           .SectionFive-MainContainer-Menu1-Inner-List{
             .SectionFive-MainContainer-Menu1-Inner-List-item1{
@@ -1639,7 +1651,8 @@ main{
 }
 
 @media (max-width: 768px) {
-  .SectionSix{
+  section.SectionSix{
+    padding-bottom: 30px;
     .SectionSix-MainContainer{
       padding: 100px 0 120px 0;
       max-width: 700px;
@@ -1677,7 +1690,8 @@ main{
     padding: 30px 0 0 0;
 
     .SectionSeven-MainContainer {
-      max-width: 700px;
+      text-align: center;
+      display: block;
       flex-wrap: wrap;
       justify-content: center;
 
@@ -1742,6 +1756,7 @@ main{
       .SectionSeven-MainContainer{
         .SectionSeven-MainContainer-Menu{
           text-align: center;
+          margin: auto;
 
           .SectionSeven-MainContainer-Menu-Inner2 {
             padding: 40px 0 30px 0;
@@ -1776,13 +1791,30 @@ main{
   }
 
   @media (max-width: 768px) {
-    .SectionSeven {
+    section.SectionSeven {
       .SectionSeven-MainContainer {
         .SectionSeven-MainContainer-Menu1 {
           margin-top: 50px;
           text-align: center;
+          max-width: 700px;
           .SectionSeven-MainContainer-Menu1-Form {
             padding: 60px 30px 65px 30px;
+            max-width: 650px;
+            .First_Input-Block{
+              max-width: 600px;
+            }
+            .Second_Input-Block{
+              max-width: 600px;
+            }
+            .Third_Input-Block{
+              max-width: 600px;
+            }
+            .Fourth_Input-Block{
+              max-width: 600px;
+            }
+            .TextArea{
+              max-width: 600px;
+            }
 
             .SectionSeven-MainContainer-Menu1-Form .First_Input-Block {
 
@@ -1797,10 +1829,11 @@ main{
 
           .Title {
             font-size: 34px;
-            margin: 0 0 35px 45px;
+            margin: 0 0 35px 120px;
           }
           .SubmitButton{
             font-size: 15px;
+            padding: 22px 86px;
           }
         }
       }
@@ -2011,7 +2044,7 @@ main{
           margin: 15px 0 0 0;
         }
         .LastButOne{
-          margin-right: 50px;
+
 
         }
         .Footer-MainContainer-Lower-Left{
@@ -2048,7 +2081,6 @@ main{
       }
       nav{
         .menu-btn{
-          right: -15%;
         }
       }
     }
@@ -2916,14 +2948,15 @@ main{
   @media (max-width: 431px) {
     body {
       .FirstDiv {
-        max-width: 360px;
+        max-width: 420px;
         margin: 0 0 25px 0;
-        justify-content: space-around;
-        gap: 30px;
+        justify-content: flex-end;
+        gap: 50px;
 
         p {
           margin: 0 0 0 30px;
           font-size: 14px;
+          display: none;
         }
 
         .FirstDiv_menu-list {
@@ -2936,13 +2969,28 @@ main{
 
   @media (max-width: 431px) {
     header {
+      .Mobile_MenuBack{
+        max-width: 420px;
+        .nav-open{
+         margin-left: 35px;
+        }
+        nav{
+          .nav-links{
+
+          }
+          left: -5%;
+          width: 430px;
+          .menu-btn{
+            right:-16%;
+          }
+        }
       .SecondDiv {
         padding: 0;
         width: 100%;
-        max-width: 360px;
-        gap: 5px;
+        max-width: 380px;
         justify-content: space-between;
 
+         }
         .SecondDiv-link {
           margin: 0 0 0 10px;
           padding: 10px 0 0 0;
@@ -3009,7 +3057,7 @@ main{
 
   }
   @media (max-width: 431px) {
-    .SectionOne {
+    section.SectionOne {
       .SectionOne-MainContainer {
         .SectionOne-MainContainer-Menu4 {
           margin-top: 100px;
@@ -3056,6 +3104,7 @@ main{
 
         .SectionTwo-MainContainer-Menu1 {
           height: 300px;
+          max-width: 400px;
         }
 
         .SectionTwo-MainContainer-Menu2 {
@@ -3203,7 +3252,35 @@ main{
       padding: 150px 0 50px 0;
 
       .SectionFour-MainContainer {
-        max-width: 320px;
+        max-width: 400px;
+        .SectionFour-MainContainer-Menu2 {
+          max-width: 400px;
+          margin-left: 18px;
+
+          .SectionFour-MainContainer-Menu2-item {
+            padding-bottom: 25px;
+            width: calc(98% - 3px);
+
+            img {
+              margin: 30px 0 15px 25px;
+            }
+
+            h3 {
+              font-size: 18px;
+              margin: 0 0 15px 30px;
+            }
+
+            p {
+              font-size: 12px;
+              margin: 0 0 22px 30px;
+            }
+
+            a {
+              font-size: 12px;
+              margin: 0 0 22px 30px;
+            }
+          }
+        }
 
         .SectionFour-MainContainer-Menu1 {
           max-width: 320px;
@@ -3219,34 +3296,6 @@ main{
           p:last-of-type {
             font-size: 14px;
             max-width: 320px;
-          }
-        }
-      }
-
-      .SectionFour-MainContainer-Menu2 {
-        max-width: 320px;
-
-        .SectionFour-MainContainer-Menu2-item {
-          padding-bottom: 25px;
-          width: calc(98% - 3px);
-
-          img {
-            margin: 30px 0 15px 25px;
-          }
-
-          h3 {
-            font-size: 18px;
-            margin: 0 0 15px 30px;
-          }
-
-          p {
-            font-size: 12px;
-            margin: 0 0 22px 30px;
-          }
-
-          a {
-            font-size: 12px;
-            margin: 0 0 22px 30px;
           }
         }
       }
@@ -3362,18 +3411,24 @@ main{
   }
 
   @media (max-width: 431px) {
-    .SectionSix {
+    section.SectionSix {
       .SectionSix-MainContainer {
+        max-width: 400px;
         padding: 100px 0 120px 0;
-        max-width: 320px;
+        max-width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .SectionSix-MainContainer-Menu {
           gap: 25px;
           flex-wrap: wrap;
+          margin-left: 30px;
 
           figure {
             padding: 21px 21px 19px 21px;
             width: calc(97% - 3px);
+            margin-left: 6px;
 
             h3 {
               font-size: 18px;
@@ -3412,13 +3467,11 @@ main{
       padding: 30px 0 0 0;
 
       .SectionSeven-MainContainer {
-        max-width: 320px;
+        max-width: 410px;
         flex-wrap: wrap;
         justify-content: center;
 
         .SectionSeven-MainContainer-Menu {
-
-          max-width: 320px;
           padding-left: 5px;
           padding-right: 5px;
 
@@ -3514,48 +3567,17 @@ main{
     }
 
     @media (max-width: 431px) {
-      .SectionSeven {
+      section.SectionSeven {
         .SectionSeven-MainContainer {
           .SectionSeven-MainContainer-Menu1 {
             text-align: center;
-            max-width: 320px;
+            max-width: 400px;
             margin: 50px 0 0 1px;
 
             .SectionSeven-MainContainer-Menu1-Form {
               padding: 20px 5px 25px 5px;
 
-              .ServiceDescription {
-                width: 370px;
-                height: 160px;
-              }
 
-              .First_Input-Block {
-                .First_Input {
-                  width: 370px;
-                  height: 60px;
-                }
-              }
-
-              .Fourth_Input-Block {
-                .Fourth_Input {
-                  width: 370px;
-                  height: 60px;
-                }
-              }
-
-              .Second_Input-Block {
-                .Second_Input {
-                  width: 370px;
-                  height: 60px;
-                }
-              }
-
-              .Third_Input-Block {
-                .Third_Input {
-                  width: 370px;
-                  height: 60px;
-                }
-              }
 
             }
 
@@ -3583,7 +3605,7 @@ main{
 
 
     @media (max-width: 431px) {
-      .SectionEight {
+      section.SectionEight {
         .SectionEight_MainContainer {
           max-width: 370px;
 
@@ -3627,7 +3649,10 @@ main{
         padding: 20px 0 50px 0;
 
         .SectionNine-MainContainer {
-          max-width: 320px;
+          max-width: 400px;
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
 
           .SectionNine-MainContainer-Lower {
             padding: 0 15px;
@@ -3639,7 +3664,7 @@ main{
           .SectionNine-MainContainer-Middle {
             margin: 10px 0 0 0;
             padding: 0 15px;
-            max-width: 320px;
+            max-width: 400px;
             flex-wrap: wrap;
 
             article {
@@ -3735,8 +3760,9 @@ main{
 
           .SectionTen-MainContainer-Form {
             .SectionTen-MainContainer-Form-Input {
-              width: 260px;
+              width: 220px;
               height: 40px;
+              padding: 0 0 0 15px;
             }
 
             .SubscribeButton {

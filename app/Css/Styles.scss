@@ -32,6 +32,9 @@ body{
   p{
     @include Styles(400,17px,159%,0.02em,#1c2752);
     margin:0 0 0 120px;
+    &:hover{
+      color: #ffb342;
+    }
   }
   .FirstDiv_menu-list{
     margin: 0 120px 0 0;
@@ -66,12 +69,20 @@ body{
 }
   .SecondDiv-menu1{
     a {
-      img{
+      svg{
         width: 68px;
         height: 68px;
+       path{
+         &:hover{
+           fill: white;
+
+         }
+       }
       }
     }
   }
+
+
   .SecondDiv-menu2{
     margin: 8px 0 0 0;
     p{
@@ -113,6 +124,10 @@ body{
     padding: 19px 42px;
     margin: 10px 10px;
     background: #1c2752;
+    &:hover{
+      color: #ffb342;
+      background: white;
+    }
 }
 }
 
@@ -155,6 +170,9 @@ body{
     background: #ffb342;
     margin:0 0 9px 0;
     text-decoration: none;
+    &:hover{
+      color: white;
+    }
   }
 }
 
@@ -245,10 +263,11 @@ body{
       @include Styles(400, 18px, 150%, 0.02em, #1c2752);
       text-transform: capitalize;
       margin: 10px 0 22px 0;
-      display: flex;
-      justify-content: center;
       max-width: 206px;
       background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 0 20px 0 29px;
       &::before{
         margin: 0 10px 0 0;
@@ -282,6 +301,10 @@ body{
       display: flex;
       padding-right: 60px;
       padding-top:0;
+      transition: transform 0.3s ease, flex 0.3s ease;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
 
     .ui-tabs-nav {
@@ -302,13 +325,13 @@ body{
       border: 1px solid #1c2752;
       float: none;
       font-size: 0;
-      padding: 19px 46px;
+
       background: #ffb342;
 
       .ui-tabs-anchor {
         display: flex;
         justify-content: center;
-        padding: 0;
+        padding: 19px 46px;
         float: none;
         @include Styles(400, 20px, 150%, 0.02em, #222);
         &::before {
@@ -399,6 +422,9 @@ body{
         padding: 19px 42px;
         background: #ffb342;
         text-decoration: none;
+        &:hover{
+          background: white;
+        }
       }
     }
   }
@@ -456,6 +482,10 @@ body{
     padding-bottom: 50px;
     background: #1c2752;
     width: 31%;
+    transition: transform 0.3s ease, flex 0.3s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
     img{
       max-width: 100%;
       margin: 50px 0 20px 35px;
@@ -473,6 +503,9 @@ body{
       @include Styles(400, 18px, 150%, 0.01em,#fff);
       margin: 0 0 0 35px;
       text-decoration: none;
+      &:hover{
+        color: #ffb342;
+      }
     }
   }
 }
@@ -490,9 +523,13 @@ body{
     .SectionFive-MainContainer-Menu1-Inner{
       max-width: 560px;
       position: absolute;
-      top:5%;
-      left:5%;
+      top:12%;
+      left:13%;
       background: rgba(28, 39, 82, 0.86);
+      transition: transform 0.3s ease, flex 0.3s ease;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
     .SectionFive-MainContainer-Menu1-Inner-List{
 
@@ -554,7 +591,7 @@ body{
   background: white;
   .SectionFive-MainContainer-Menu2-Upper{
     max-width: 590px;
-    margin:40px 0 40px 50px;
+    margin:40px 0 80px 50px;
     p:first-of-type{
       margin: 10px 0 23px 0;
       @include Styles(400,18px, 150%, 0.02em,#1c2752);
@@ -588,6 +625,7 @@ body{
   a{
     @include Styles(400, 20px, 140%, 0.02em,#1c2752);
     display: flex;
+
 
     &::before{
       margin-right: 20px;
@@ -623,7 +661,7 @@ body{
     text-align: center;
     margin: 0 120px 50px 120px;
   p{
-    @include Styles(400, 18px, 150%, 0.02em,#1c2752);
+    @include Styles(400, 18px, 200%, 0.02em,#1c2752);
     text-transform: capitalize;
     text-align: center;
     background: white;
@@ -632,7 +670,7 @@ body{
     margin-bottom: 22px;
     &::before{
       position: relative;
-      top:5px;
+      top:4px;
       margin: 0 10px 0 0;
       content: "";
       width: 22px;
@@ -653,6 +691,12 @@ body{
   display: flex;
   gap:30px;
   justify-content: space-between;
+  figure{
+    transition: transform 0.3s ease, flex 0.3s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
 
    .SectionSix-MainContainer-Menu-Item1{
      background: white;
@@ -783,6 +827,10 @@ body{
   padding: 41px 60px 36px 41px;
   border: 1px solid #e4e4e4;
   margin: 0 0 40px 0;
+  transition: transform 0.3s ease, flex 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
 
   .SectionSeven-MainContainer-Menu-Inner-Item {
     border-bottom: 1px solid #e4e4e4;
@@ -852,6 +900,10 @@ body{
   max-width: 591px;
   background: #ffb342;
   padding: 60px 0 50px 0 ;
+  transition: transform 0.3s ease, flex 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
   .SectionSeven-MainContainer-Menu-Inner2-List{
     max-width: 511px;
     padding: 10px 0 0 0;
@@ -1112,12 +1164,15 @@ body{
   .SectionNine-MainContainer-Upper-Left{
     max-width: 592px;
     .Left-Item1{
-      @include Styles(400,17px,159%, 0.02em, #1c2752);
+      @include Styles(400,17px,200%, 0.02em, #1c2752);
       background: #e4e4e4;
       margin: 10px 0 23px 0;
       display: inline-block;
       padding: 0 20px;
       &::before{
+        position: relative;
+        top:4px;
+        margin: 0 7px 0 0;
         content: "";
         width: 22px;
         height: 27px;
@@ -1143,10 +1198,36 @@ body{
   margin:40px 0 0 0 !important;
   gap:30px;
   @include AlignmentOfBlock(40px 0 0 0,1200px,flex,space-between);
+  article:nth-of-type(2){
+    position: relative;
+    svg{
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      right:26px;
+      top:5px;
+    }
+  }
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  svg {
+    animation: rotateImage 5s infinite linear;
+  }
   article{
     background: white;
     max-width: 380px;
     padding: 40px 50px 40px 50px;
+    transition: transform 0.3s ease, flex 0.3s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
     .Article-Link{
       @include Styles(400,20px,150%, 0.02em, #1c2752);
       padding: 19px 90px;
@@ -1189,7 +1270,12 @@ body{
     @include Styles(400,17px,159%, 0.02em, #7e7e7e);
     text-transform: capitalize;
     margin: 0 0 20px 0;
+    &:hover{
+      text-decoration: underline;
+    }
     &::before{
+      position: relative;
+      top:4px;
       content: "";
       width: 19px;
       height: 19px;
@@ -1329,6 +1415,7 @@ body{
 .Footer-MainContainer-Lower-Left-List{
   display: flex;
   gap:15px;
+  max-width: 415px;
   li{
     list-style: none;
   }
@@ -1346,6 +1433,10 @@ body{
     a{
       text-decoration: none;
       @include Styles(400,17px,159%, 0.02em, #fff);
+      &:hover{
+        text-decoration: underline ;
+        color: #ffb342;
+      }
     }
   }
   li:not(:last-child){

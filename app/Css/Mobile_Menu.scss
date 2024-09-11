@@ -19,10 +19,13 @@ body {
   align-items: center;
 }
 .Mobile_MenuBack{
+  position: absolute;
  justify-content: space-between;
-  background: white;
+  background: transparent;
   max-height: 50px;
   display: flex;
+  top:0;
+  left: 7px;
   .SecondDiv-menu3-list-item-link2{
     font-size: 14px;
     margin: 0 15px 0 0;
@@ -37,11 +40,12 @@ body {
 nav {
   --transition-time: 500ms;
   position: relative;
+  left:-1px;
   width: 400px;
   height: 100%;
   display: flex;
   align-items: center;
-  background: white;
+  background: #ffb342;
   backdrop-filter: blur(20px);
   transform: translateX(-100%);
   transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
@@ -256,8 +260,3 @@ nav {
 }
 }
 
-@media (max-width: 431px) {
-  .Mobile_MenuBack{
-    max-width: 360px;
-  }
-}
