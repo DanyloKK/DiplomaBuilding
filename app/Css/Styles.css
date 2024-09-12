@@ -3723,7 +3723,7 @@ body {
   max-width: 1440px;
   display: flex;
   justify-content: stretch;
-  background-image: url("../Images/BackGroundImage1.webp");
+  background-image: url("../Images/BackGroundImage12.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3790,7 +3790,7 @@ body {
   gap: 50px;
 }
 .SectionTwo .SectionTwo-MainContainer-Menu1 {
-  background: url("../Images/MainImageInSectionSecond.png") no-repeat center/cover;
+  background: url("../Images/MainImageInSectionSecond2.webp") no-repeat center/cover;
   width: 100%;
 }
 .SectionTwo .SectionTwo-MainContainer-Menu2 {

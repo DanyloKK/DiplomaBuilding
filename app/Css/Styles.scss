@@ -133,7 +133,7 @@ body{
 
 .SectionOne-MainContainer{
   @include AlignmentOfBlock(auto,1440px,flex,stretch);
-  background-image: url("../Images/BackGroundImage1.webp") ;
+  background-image: url("../Images/BackGroundImage12.webp") ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ body{
     gap:50px;
   }
    .SectionTwo-MainContainer-Menu1{
-     background: url("../Images/MainImageInSectionSecond.png") no-repeat center/cover;
+     background: url("../Images/MainImageInSectionSecond2.webp") no-repeat center/cover;
      width: 100%;
    }
    .SectionTwo-MainContainer-Menu2{
