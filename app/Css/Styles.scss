@@ -909,7 +909,7 @@ body{
     padding: 10px 0 0 0;
     margin: 0 0 0 40px;
     .Item2_Of_list{
-      @include Styles(400, 18px, 150%, 0.02em, #1c2752);
+      @include Styles(400, 18px, 180%, 0.02em, #1c2752);
       text-transform: capitalize;
       display: inline-block;
       background: #f4f4f4;
@@ -917,7 +917,7 @@ body{
       margin: 0 0 20px 0;
       &::before{
         position: relative;
-        top:5px;
+        top:4px;
         content: "";
         width: 22px;
         height: 27px;

@@ -22,6 +22,20 @@ main{
     }
   }
 }
+@media (max-width: 1200px){
+  section.SectionNine{
+    .SectionNine-MainContainer{
+      .SectionNine-MainContainer-Middle{
+        article{
+          .Article-Link
+          {
+            padding: 19px 60px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1024px) {
   header{
     .SecondDiv{
@@ -807,7 +821,7 @@ main{
           .SectionSeven-MainContainer-Menu1-Form {
             padding: 60px 30px 65px 30px;
 
-            .SectionSeven-MainContainer-Menu1-Form .First_Input-Block {
+            .First_Input-Block {
 
             }
           }
@@ -872,7 +886,7 @@ main{
           article {
             .Article-Link {
               font-size: 15px;
-              padding: 15px 47px;
+              padding: 15px 43px;
             }
 
             padding: 30px 40px 30px 40px;
@@ -1037,6 +1051,59 @@ main{
     }
   }
 }
+
+@media (max-width: 895px) {
+  section.SectionFour{
+    .SectionFour-MainContainer{
+      max-width: 780px;
+      .SectionFour-MainContainer-Menu1{
+        max-width: 545px;
+      }
+      .SectionFour-MainContainer-Menu2{
+        max-width: 780px;
+        .SectionFour-MainContainer-Menu2-item{
+          width: calc(47% - 3px);
+          max-width: 363px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 895px) {
+  section.SectionSeven{
+    .SectionSeven-MainContainer{
+      max-width: 780px;
+      .SectionSeven-MainContainer-Menu1{
+        max-width: 480px;
+        .SectionSeven-MainContainer-Menu1-Form{
+          max-width: 450px;
+          .Second_Input-Block{
+            max-width: 350px;
+          }
+          .First_Input-Block{
+            max-width: 350px;
+          }
+          .Third_Input-Block{
+            max-width: 350px;
+          }
+          .Fourth_Input-Block{
+            max-width: 350px;
+          }
+          .TextArea{
+            max-width: 350px;
+          }
+          .SubmitButton{
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 @media (max-width: 840px) {
   section.SectionThree{
     .SectionThree-MainContainer{
@@ -1232,6 +1299,7 @@ main{
             max-width: 350px;
           }
           .SubmitButton{
+            width: 350px;
           }
         }
       }
@@ -1697,7 +1765,7 @@ main{
 
       .SectionSeven-MainContainer-Menu {
 
-        max-width: 380px;
+        max-width: 700px;
         padding-left: 25px;
 
         .Menu-Item {
@@ -1760,6 +1828,7 @@ main{
 
           .SectionSeven-MainContainer-Menu-Inner2 {
             padding: 40px 0 30px 0;
+            margin:auto;
             .SectionSeven-MainContainer-Menu-Inner2-List2{
               max-width: 420px;
               span{
@@ -2062,12 +2131,15 @@ main{
   body {
     .FirstDiv {
       max-width: 520px;
-      justify-content: space-around;
+      justify-content: flex-end;
       .FirstDiv_menu-list{
         margin: 0;
       }
       p {
         margin: 0;
+        display: none;
+      }
+      .FirstDiv_menu-list{
       }
     }
   }
@@ -2075,12 +2147,19 @@ main{
 @media (max-width: 576px) {
   header{
     .Mobile_MenuBack{
+      left: 0;
       .SecondDiv-menu3-list-item-link2{
         display: none;
 
       }
+      nav.nav-open{
+
+        width: 95vw;
+      }
       nav{
+
         .menu-btn{
+          right: -15%;
         }
       }
     }
@@ -2273,6 +2352,8 @@ main{
           max-width: 400px;
           padding-right: 25px;
           justify-content: center;
+          transform: none;
+          margin: auto;
           .ImageDiv{
             max-width: 270px;
             margin-top: 14px;
@@ -2970,9 +3051,10 @@ main{
   @media (max-width: 431px) {
     header {
       .Mobile_MenuBack{
-        max-width: 420px;
+        width: 100vw;
         .nav-open{
          margin-left: 35px;
+          width: 100%;
         }
         nav{
           .nav-links{
@@ -3138,10 +3220,11 @@ main{
 
           .SectionTwo-MainContainer-Menu2-Inner {
             gap: 20px;
+            flex-wrap: wrap;
+            max-width: 420px;
 
             img {
-              width: 80%;
-              height: 100%;
+              width: 100%;
               padding-top: 0;
             }
 
@@ -3151,7 +3234,7 @@ main{
               }
 
               li {
-                font-size: 12px;
+                font-size: 24px;
               }
             }
           }
@@ -3804,16 +3887,21 @@ main{
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: center;
-            max-width: 320px;
+            max-width: 400px;
             gap: 15px;
+            .Footer-MainContainer-Upper-Link1.Linka{
+              display: none;
+            }
+
             .Footer-MainContainer-Upper-Link:last-of-type{
-              margin: 15px 15px 0 0;
+              margin: 15px 0 0 20px;
             }
             .Footer-MainContainer-Upper-Link:nth-of-type(2){
-              margin: 15px 0 0 10px;
+              margin: 15px 0 0 15px;
             }
             .Footer-MainContainer-Upper-Link.Linka{
               margin-top: 20px;
+              margin-left: 25px;
             }
             .Footer-MainContainer-Upper-Link{
               width: calc(47% - 3px);
@@ -3874,3 +3962,229 @@ main{
     }
   }
 
+
+@media (max-width: 375px) {
+  body{
+    .FirstDiv{
+      max-width: 372px;
+    }
+    .Mobile_MenuBack{
+      nav{
+        .menu-btn{
+          right: -18%;
+        }
+      }
+    }
+  }
+  
+}
+@media (max-width: 375px) {
+  header{
+    .SecondDiv{
+      flex-wrap: wrap;
+      padding: 0 15px;
+      justify-content: center;
+      .SecondDiv-MainMenu{
+        flex-wrap: wrap;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section.SectionOne{
+    .SectionOne-MainContainer{
+      .SectionOne-MainContainer-Menu4{
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section.SectionTwo{
+    .SectionTwo-MainContainer{
+      .SectionTwo-MainContainer-Menu2{
+        .SectionTwo-MainContainer-Menu2-Inner{
+          flex-wrap: wrap;
+          justify-content: center;
+          max-width: 375px;
+          img{
+            width: 100%;
+          }
+          .SectionTwo-MainContainer-Menu2-Inner-list{
+            li{
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section.SectionThree{
+    .SectionThree-MainContainer{
+      .SectionThree-MainContainer-Menu2.ui-tabs{
+        .SectionThree-MainContainer-Menu2-List{
+          margin-left: 0;
+        }
+        .SectionThree-MainContainer-Menu2-List-Inner{
+          margin: 0;
+          padding: 0;
+          .SectionThree-MainContainer-Menu2-Inner-List{
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section.SectionFive{
+    .SectionFive-MainContainer{
+      .SectionFive-MainContainer-Menu1{
+        .SectionFive-MainContainer-Menu1-Inner{
+          top:13%;
+          left: 10%;
+        }
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 375px) {
+  section.SectionSeven{
+    .SectionSeven-MainContainer{
+      .SectionSeven-MainContainer-Menu1{
+        .Title{
+          margin: 0;
+        }
+        .SectionSeven-MainContainer-Menu1-Form{
+          .SubmitButton{
+            width: 100%;
+            font-size: 22px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section.SectionNine{
+    .SectionNine-MainContainer{
+      .SectionNine-MainContainer-Middle{
+        article{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section.SectionTen{
+    .SectionTen-MainContainer{
+      max-width: 360px;
+      .SectionTen-MainContainer-Form{
+        width: 85%;
+        align-items: normal;
+        .SectionTen-MainContainer-Form-Input{
+          width: 100%;
+          padding: 7px 0 7px 15px;
+
+        }
+        .SubscribeButton{
+          padding: 5px 25px;
+          font-size: 0;
+          background: url("../Images/icons8-галочка-32.svg") no-repeat aliceblue center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  body{
+    padding: 0;
+    .FirstDiv{
+      max-width: 318px;
+    }
+    .Mobile_MenuBack{
+      nav.nav-open{
+        width: 100vw;
+      }
+      nav{
+        .menu-btn{
+          right: -22%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  header{
+    .SecondDiv{
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: center;
+      .SecondDiv-MainMenu{
+        flex-wrap: wrap;
+        margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  main{
+    padding: 0 5px;
+  }
+}
+
+
+@media (max-width: 321px) {
+  section.SectionTen{
+    .SectionTen-MainContainer{
+      max-width: 315px;
+      .SectionTen-MainContainer-Form{
+        width: 88%;
+        align-items: normal;
+        .SectionTen-MainContainer-Form-Input{
+          width: 100%;
+          padding: 7px 0 7px 15px;
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  footer.Footer{
+    .Footer-MainContainer{
+      .Footer-MainContainer-Upper{
+        justify-content: space-around;
+        .Footer-MainContainer-Upper-Link1{
+          display: none;
+        }
+        .Footer-MainContainer-Upper-Link{
+          margin-left: 10px;
+        }
+        .Footer-MainContainer-Upper-Link.Linka.LastLinka{
+         margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  section.SectionFive .SectionFive-MainContainer .SectionFive-MainContainer-Menu1 .SectionFive-MainContainer-Menu1-Inner {
+    top: 13%;
+    left: 6%;
+  }
+}
