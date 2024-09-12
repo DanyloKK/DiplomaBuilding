@@ -3723,7 +3723,7 @@ body {
   max-width: 1440px;
   display: flex;
   justify-content: stretch;
-  background-image: url("../Images/BackGroundImage1.png");
+  background-image: url("../Images/BackGroundImage1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
