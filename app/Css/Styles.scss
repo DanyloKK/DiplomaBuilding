@@ -4,6 +4,38 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../Fonts/Inter18pt-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../Fonts/Inter18pt-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Bold-Italic';
+  src: url('../Fonts/Inter18pt-BoldItalic.woff2') format('woff2');
+  font-weight:700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../Fonts/Mulish-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body{
   background: white;
 
@@ -32,6 +64,7 @@ body{
   p{
     @include Styles(400,17px,159%,0.02em,#1c2752);
     margin:0 0 0 120px;
+    font-family: 'Inter-Regular';
     &:hover{
       color: #ffb342;
     }
@@ -86,11 +119,13 @@ body{
   .SecondDiv-menu2{
     margin: 8px 0 0 0;
     p{
-      @include Styles(400,20px,130%,0.02em,#1c2752)
+      @include Styles(400,20px,130%,0.02em,#1c2752);
+      font-family: 'Mulish';
     }
     .SecondDiv-menu-link{
       @include Styles(400,17px,159%,0.02em,#1c2752);
       text-decoration: none;
+      font-family: 'Mulish';
     }
   }
 }
@@ -113,12 +148,14 @@ body{
   .SecondDiv-menu3-list-item-link{
     @include Styles(400,19px,158%,0.02em,#222);
     @extend %TextStyle;
+    font-family: 'Inter-Regular';
     &:hover{
     color: #f2f2f2;
   }
   }
   .SecondDiv-menu3-list-item-link2{
     @include Styles(400,20px,150%,0.02em,#f4f4f4);
+    font-family: 'Inter-Regular';
     text-align: center;
     @extend %TextStyle;
     padding: 19px 42px;
@@ -145,6 +182,7 @@ body{
   .SectionOne-MainContainer-Menu4-item1{
     display: flex;
     @include Styles(400,18px,150%,0.02em,#fff);
+    font-family: 'Inter-Regular';
     text-transform: capitalize;
     max-width: 602px;
     margin:0 0 31px 0;
@@ -160,12 +198,14 @@ body{
   }
   .SectionOne-MainContainer-Menu4-item2{
     @include Styles(400,60px,130%,0.02em,#fff);
+    font-family: 'Inter-Regular';
     text-transform: capitalize;
     margin:0 0 29px 0;
     max-width: 712px;
   }
   .SectionOne-MainContainer-Menu4-Link{
     @include Styles(400,20px,150%,0.02em,#1c2752);
+    font-family: 'Inter-Regular';
     padding: 19px 42px;
     background: #ffb342;
     margin:0 0 9px 0;
